@@ -312,7 +312,7 @@ align-items: center;
 
 .promo-text {
 flex: 1;
-text-align: center;
+text-align: end;
 }
 
 .text-two {
@@ -455,7 +455,7 @@ margin-left: 0; /* Removed margin for small screens */
       } */
 
       .banner {
-          background-image: url('https://ss7.vzw.com/is/image/VerizonWireless/HomeHub_Hero_d?fmt=webp-alpha&scl=1');
+        background-image: url(/internereseller///assets//img/verizon/wi-fi-network-connections-concept-background-with-flashing-blue-wi-fi-icons-connected-by-a-digital-plexus-network-this-internet-technology-background-is-full-hd-and-a-seamless-loop-video.jpg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -471,45 +471,50 @@ margin-left: 0; /* Removed margin for small screens */
       }
 
       .heading {
-          gap: 15px;
-          display: inline-grid;
-            text-align: start;
+        font-size: 22px;
+            margin-bottom: 20px !important;
+            text-align: left;
+            display: grid;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-weight: 700;
       }
 
       .heading h1 {
-          color: yellow;
-          font-size: 80px;
-          margin: 0;
+    color: aliceblue;
+        font-size: 80px;
+        margin: 0;
+    
       }
 
       .heading p {
-          color: white;
+        color: #898989;
           font-weight: bold;
           font-size: 24px;
           margin: 10px 0;
       }
 
       .heading a {
-          appearance: none;
-          background-color: rgb(255, 255, 255);
-          border: 1px solid rgb(255, 255, 255);
-          border-radius: 50px;
-          box-sizing: border-box;
-          color: rgb(0, 0, 0);
-          cursor: pointer;
-          display: inline-block;
-          font-size: 0.875rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 1;
-          margin: 10px 0;
-          padding: 0.75em 1.5em;
-          text-align: center;
-          text-decoration: none;
-          transition-duration: 0.2s;
-          transition-property: color;
-          vertical-align: middle;
-          width: 120px;
+    appearance: none;
+        background-color: rgb(255 255 255);
+            border: 4px solid rgb(54 65 130);
+            border-radius: 17px;
+            box-sizing: border-box;
+        color: rgb(0 0 0);
+            cursor: pointer;
+        display: flex;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1;
+            margin: 10px 0;
+            padding: 0.75em 1.5em;
+            text-align: center;
+            text-decoration: none;
+            transition-duration: 0.2s;
+            transition-property: color;
+            vertical-align: middle;
+        width: 130px;
       }
 
       @media screen and (min-width: 991px) {
@@ -540,7 +545,8 @@ margin-left: 0; /* Removed margin for small screens */
           margin: 20px 0;
           position: relative;
           transition: all 0.15s ease;
-          width: 90%;
+        width: 100%;
+            padding: 20px;
       }
 
       .card-body {
@@ -548,16 +554,16 @@ margin-left: 0; /* Removed margin for small screens */
       /* display: grid; */
       align-items: center;
       gap: 10px;
-        height: 292px;
+        height: auto;
     }
 
 
     .card-body h3 {
-      font-family: Verizon-NHG-eDS, Helvetica, Arial, sans-serif;
-      font-size: 24px;
-      font-weight: 900;
-      line-height: 28px;
-      color: #f50a23;
+    font-family: Verizon-NHG-eDS, Helvetica, Arial, sans-serif;
+        font-size: 27px;
+            font-weight: 900;
+        line-height: 31px;
+            color: #0017ff;
   }
 
   .card-body p {
@@ -791,7 +797,12 @@ margin-left: 0; /* Removed margin for small screens */
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #f3ede0;
+    background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
+        background-image: url(/internereseller//assets//img//verizon/nasa-Q1p7bh3SHj8-unsplash\ \(1\).jpg);
     padding: 80px 0;
 }
 
@@ -814,10 +825,11 @@ margin-left: 0; /* Removed margin for small screens */
 }
 
 .card-two {
-    background: white;
-    border-radius: 8px;
+background: white;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+
 }
 
 .card-two:hover {
@@ -834,17 +846,18 @@ margin-left: 0; /* Removed margin for small screens */
 }
 
 .card-content h2 {
-    font-size: 2.4rem;
+font-size: 2.4rem;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     margin: 0;
     margin-bottom: 8px;
+    color: #005fff;
 }
 
 .card-content p {
-    color: #666;
+color: #666;
     margin: 0;
-    font-size: 12px;
+    font-size: 20px;
     text-align: start;
     margin-bottom: 16px;
 }
@@ -995,14 +1008,16 @@ margin-left: 0; /* Removed margin for small screens */
 
           box-sizing: border-box;
       }
+        
       .plans-card {
-          border-radius: 24px;
-          cursor: pointer;
-          height: auto;
-          transition: all 0.25s ease 0s;
-          background-color: #f3ede0;
-          padding: 20px;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+            cursor: pointer;
+            height: auto;
+            transition: all 0.25s ease 0s;
+            background-color: #f3ede0;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            height: 655px;
       }
       .plans-card h6, .plans-card p, .plans-card span, .plans-card h3 {
           margin: 0;
@@ -1176,15 +1191,15 @@ margin-bottom: 10px !important;
 }
 
 .heading {
-font-size: 35px; /* Adjust heading size as needed */
-margin-bottom: 20px !important;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #050505cb;
-font-weight: 750;
-padding-top: 20px !important;
+font-size: 35px;
+    margin-bottom: 20px !important;
+    text-align: left;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        color: #050505cb;
+        font-weight: 750;
+        padding-top: 20px !important;
 }
 
 .phone_number {
@@ -1262,13 +1277,13 @@ margin-bottom: 10px !important;
 }
 
 .heading {
-font-size: 22px; /* Adjust heading size as needed */
-margin-bottom: 20px !important;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: 700;
+font-size: 22px;
+    margin-bottom: 20px !important;
+    text-align: left;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 700;
 }
 
 .phone_number {
