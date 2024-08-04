@@ -10808,6 +10808,17 @@ START: Footer CSS
 .copyright-area.area-2 .copyright-content {
   border-top: 1px solid #1F242D;
 }
+.disclaimer{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+.disclaimer p{
+ font-size: 20px;
+ text-align: justify;
+}
+
 
 /* !END: Theme Footer CSS */
 
