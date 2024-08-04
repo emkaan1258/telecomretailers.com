@@ -268,7 +268,7 @@
 }
 
 .card-header-two h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 2.6rem;
     color: rgb(29, 186, 251);
     text-align: center;
@@ -318,7 +318,7 @@
 
 .card-body h4 {
     font-size: 2.8rem;
-    line-height: 3.4rem;
+    line-height: 3.2rem;
     text-align: center;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -328,7 +328,7 @@
 
 .card-body p {
     font-size: 1.8rem;
-    line-height: 2.4rem;
+    line-height: 2.2rem;
     padding-left: 3rem;
     padding-right: 3rem;
     margin-bottom: 3rem;
@@ -355,7 +355,7 @@
 }
 
 .section-fifth-content-rapo h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 3rem;
     font-size: 2rem;
     line-height: 2.6rem;
@@ -363,7 +363,7 @@
 }
 
 .section-fifth-content-rapo h3 {
-    font-size: 4.4rem;
+    font-size: 2rem;
     line-height: 5rem;
     color: black;
 }
@@ -457,7 +457,7 @@
 }
 
 .section-third-main-rapo h2 {
-    font-size: 4.4rem;
+    font-size: 2rem;
     line-height: 5rem;
     font-weight: 500;
     color: #333;
@@ -473,8 +473,8 @@
 
 .section-two-txt h3 {
     font-weight: 700;
-    font-size: 4rem;
-    line-height: 3.4rem;
+    font-size: 2rem;
+    line-height: 3.2rem;
     margin-bottom: 0px;
     color: #333;
 text-align: center;
@@ -482,7 +482,7 @@ text-align: center;
 
 .section-two-txt p {
     font-size: 1.8rem;
-    line-height: 2.4rem;
+    line-height: 2.2rem;
     text-align: center;
         margin-top: 20px;
 }
@@ -490,15 +490,15 @@ text-align: center;
 .section-forth-txt h3 {
     font-weight: 700;
     color: white;
-    font-size: 4rem;
-    line-height: 3.4rem;
+    font-size: 2rem;
+    line-height: 3.2rem;
     margin-bottom: 0px;
     text-align: center;
 }
 
 .section-forth-txt p {
     font-size: 1.8rem;
-    line-height: 2.4rem;
+    line-height: 2.2rem;
     color: white;
     text-align: center;
         margin-top: 20px;
@@ -507,7 +507,7 @@ text-align: center;
 
 
 .banner-main-rapo h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 3rem;
     color: #ffffff;
     }
@@ -571,7 +571,7 @@ text-align: center;
 
 .banner-main-rapo h3 {
     font-size: 1.8rem;
-    line-height: 2.4rem;
+    line-height: 2.2rem;
 
 }
 
@@ -616,7 +616,7 @@ text-align: center;
 
 .doller-times {
     font-size: 1.2rem !important;
-    line-height: 1.4rem;
+    line-height: 1.2rem;
     font-weight: 400;
     text-align: right;
     color: whitesmoke;
@@ -655,7 +655,7 @@ text-align: center;
 
 .doller-times-two {
     font-size: 1.2rem !important;
-    line-height: 1.4rem;
+    line-height: 1.2rem;
     font-weight: 400;
     text-align: right;
     color: white;
