@@ -18,7 +18,7 @@
         }
 
         // Update this to your desired email address.
-        $recipient = "contact@yourdomain.com";
+        $recipient = "asharkhan1258@gmail.com";
 		$subject = "Message from $fullname";
 
         // Email content.

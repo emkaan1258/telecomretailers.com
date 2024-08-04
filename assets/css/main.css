@@ -611,7 +611,7 @@ ul {
   overflow: hidden;
   position: absolute;
   content: attr(data-loading-text);
-  animation: loading 6s infinite;
+  animation: loading 2s infinite;
 }
 @keyframes loading {
   0% {
