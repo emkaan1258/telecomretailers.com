@@ -455,7 +455,7 @@ margin-left: 0; /* Removed margin for small screens */
       } */
 
       .banner {
-        background-image: url(/internereseller///assets//img/verizon/wi-fi-network-connections-concept-background-with-flashing-blue-wi-fi-icons-connected-by-a-digital-plexus-network-this-internet-technology-background-is-full-hd-and-a-seamless-loop-video.jpg);
+        background-image: url(../img/verizon/header-img.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
