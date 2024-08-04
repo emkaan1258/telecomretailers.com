@@ -453,7 +453,15 @@ margin-left: 0; /* Removed margin for small screens */
       .col-4 {
           flex: 0 0 33.333%;
       } */
-
+.spectrum-banner {
+    background-color: #F5F5F5;
+    background-image: url(../img/verizon/spectrum-header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+}
       .banner {
         background-image: url(../img/verizon/header-img.png);
           background-position: center;
@@ -516,7 +524,9 @@ margin-left: 0; /* Removed margin for small screens */
             vertical-align: middle;
         width: 130px;
       }
-
+.banner-container {
+    background: #0000008c;
+}
       @media screen and (min-width: 991px) {
           .heading p {
               font-size: 32px;

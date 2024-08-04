@@ -231,14 +231,16 @@
     color: black;
 }
 
-.position-absolute {
+/* .position-absolute {
     position: absolute;
     top: -22px;
     left: 94px;
 }
 
+*/
+
 .card-body-two {
-    position: relative;
+
     padding-top: 30px;
 }
 
@@ -278,6 +280,7 @@
     padding-right: 2rem;
     background: #003057;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .services-txt {
@@ -424,7 +427,7 @@
 }
 
 .card {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -474,12 +477,14 @@
     line-height: 3.4rem;
     margin-bottom: 0px;
     color: #333;
-
+text-align: center;
 }
 
 .section-two-txt p {
     font-size: 1.8rem;
     line-height: 2.4rem;
+    text-align: center;
+        margin-top: 20px;
 }
 
 .section-forth-txt h3 {
@@ -488,33 +493,39 @@
     font-size: 4rem;
     line-height: 3.4rem;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 .section-forth-txt p {
     font-size: 1.8rem;
     line-height: 2.4rem;
     color: white;
+    text-align: center;
+        margin-top: 20px;
 }
 
-.banner {
-    background-color: #F5F5F5;
-    background-image: url(https://www.spectrum.com/content/dam/spectrum/common/en/images/freetest/superhero-freebg-d.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
-    height: auto;
-    background-size: cover;
-}
+
 
 .banner-main-rapo h2 {
     font-size: 2.4rem;
     line-height: 3rem;
-    color: #00629b;
-}
+    color: #ffffff;
+    }
+    
+    .banner-main-rapo h3 {
+        font-size: 20px;
+        line-height: 3rem;
+        color: #ffffff;
+    }
+    
+    .banner-main-rapo p {
+    
+        color: #ffffff;
+    }
 
 .section-two-txt-a {
     font-weight: 700;
-    color: black;
+    color: rgb(212, 210, 210);
 }
 
 .section-forth-txt-a {
@@ -569,18 +580,21 @@
     line-height: 1;
     font-weight: 400;
     margin-right: .2rem;
+    color: whitesmoke;
 }
 
 .doller {
     font-size: 3.2rem;
     line-height: 1;
     font-weight: 600 !important;
+    color: whitesmoke;
 }
 
 .doller-txt {
     font-size: 9.2rem;
     line-height: 77%;
     font-weight: 600;
+    color: whitesmoke;
 }
 
 .doller-date {
@@ -588,6 +602,7 @@
     line-height: 1;
     font-weight: 500;
     align-items: center;
+    color: whitesmoke;
 }
 
 .doller-date span {
@@ -596,6 +611,7 @@
     font-weight: 400;
     margin-left: -.1rem;
     padding-bottom: .18rem;
+    color: whitesmoke;
 }
 
 .doller-times {
@@ -603,6 +619,7 @@
     line-height: 1.4rem;
     font-weight: 400;
     text-align: right;
+    color: whitesmoke;
 }
 
 .doller-two {
@@ -643,7 +660,13 @@
     text-align: right;
     color: white;
 }
+.button-txt span {
+    color: whitesmoke;
+}
 
+.spectrum-cont {
+    background-color: #0000005e;
+}
 .banner-button {
     background: #0099d8;
     color: #fff;
