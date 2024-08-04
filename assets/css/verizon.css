@@ -524,7 +524,9 @@ margin-left: 0; /* Removed margin for small screens */
             vertical-align: middle;
         width: 130px;
       }
-
+.banner-container {
+    background: #0000008c;
+}
       @media screen and (min-width: 991px) {
           .heading p {
               font-size: 32px;
