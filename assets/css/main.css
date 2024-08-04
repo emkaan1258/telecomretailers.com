@@ -9346,7 +9346,10 @@ START: Sidebar CSS
   }
 }
 .side-menu-logo {
+  color: black;
   max-width: 150px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .side-menu-about {
