@@ -1309,3 +1309,161 @@ padding: 10px !important;
 font-size: 20px !important;
 }
 }
+
+
+.services-one {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background: var(--twonet-neutral);
+    z-index: 0;
+    overflow: hidden;
+}
+
+.services-one .services-one-shape-1,
+.services-one .services-one-shape-2,
+.services-one .services-one-shape-3 {
+    position: absolute;
+    background-size: contain;
+    width: 670px;
+    height: 520px;
+    z-index: -1;
+}
+
+.services-one .services-one-shape-4 {
+    position: absolute;
+    width: 378px;
+    background-size: cover;
+    height: 400px;
+    z-index: -1;
+}
+
+.services-one .services-one-shape-1 {
+    background: url(../images/shapes/services.shape-1.png)no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.services-one .services-one-shape-2 {
+    background: url(../images/shapes/services.shape-2.png)no-repeat;
+    top: 0;
+    right: 0;
+}
+
+.services-one .services-one-shape-3 {
+    background: url(../images/shapes/services-one-shape-3.png)no-repeat;
+    bottom: -88px;
+    left: 0;
+}
+
+.services-one .services-one-shape-4 {
+    background: url(../images/shapes/services-three-shape-img-4.png)no-repeat;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+.services-one .section-main-title h2 {
+    width: 60%;
+}
+
+.services-one .services-one-box {
+    position: relative;
+    padding: 70px 34px 40px 34px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 60px 0px rgba(99, 99, 99, 0.10);
+    margin-top: 60px;
+    transition: all 0.3s;
+    background-color: var(--twonet-text-light);
+}
+
+.services-one .services-one-box .services-one-icon {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1ps solid var(--twonet-dark);
+    line-height: 0;
+    background-color: var(--twonet-text-light);
+    box-shadow: 0px 10px 60px 0px rgba(99, 99, 99, 0.10);
+    transition: all 0.3s;
+}
+
+.services-one .services-one-box .services-one-icon i {
+    font-size: 50px;
+    color: var(--twonet-primery);
+}
+
+.services-one .services-one-box h3 {
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.services-one .services-one-box p {
+    transition: all 0.3s;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.services-one .services-one-box a {
+    transition: all 0.3s;
+    color: var(--twonet-text);
+    padding-right: 15px;
+    font-weight: 700;
+}
+
+.btn-arrow-right {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-arrow-right::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid var(--twonet-text);
+    border-right: 2px solid var(--twonet-text);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(45deg);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.services-one .services-one-box:hover {
+    background-color: var(--twonet-primery);
+    box-shadow: none;
+
+}
+
+.services-one .services-one-box:hover h3,
+.services-one .services-one-box:hover p,
+.services-one .services-one-box:hover .btn-arrow-right {
+    color: var(--twonet-text-light);
+}
+
+.services-one .services-one-box:hover .btn-arrow-right::after {
+    border-top: 2px solid var(--twonet-text-light);
+    border-right: 2px solid var(--twonet-text-light);
+}
+
+.services-one .services-one-box:hover .services-one-icon {
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.services-one .services-one-bottom p {
+    margin-top: 50px;
+    color: var(--twonet-dark);
+}
+
+.services-one .services-one-bottom p a {
+    color: var(--twonet-primery);
+    font-weight: 700;
+}

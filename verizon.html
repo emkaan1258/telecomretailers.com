@@ -1,170 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verizon | internetreseller</title>
-    <script>
-        $(document).ready(function(){
-            $('.slider').slick({
-                dots: false,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                nextArrow: '<button type="button" class="slick-next"></button>',
-                prevArrow: '<button type="button" class="slick-prev"></button>',
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
-            });
-        });
-        function toggleFaq(id) {
-                  const answer = document.getElementById(`faq-answer-${id}`);
-                  if (answer.style.display === "block") {
-                      answer.style.display = "none";
-                  } else {
-                      answer.style.display = "block";
-                  }
-              }
-          const slider = document.querySelector('.plans-slider');
-              const nextArrow = document.querySelector('.plans-next-arrow');
-              const prevArrow = document.querySelector('.plans-prev-arrow');
-      
-              let scrollAmount = 0;
-      
-              nextArrow.addEventListener('click', () => {
-                  slider.scrollBy({ top: 0, left: 300, behavior: 'smooth' });
-                  scrollAmount += 300;
-              });
-      
-              prevArrow.addEventListener('click', () => {
-                  slider.scrollBy({ top: 0, left: -300, behavior: 'smooth' });
-                  scrollAmount -= 300;
-              });
-      </script>
-      <link rel="stylesheet" href="./assets//css/verizon.css">
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-      <link rel="stylesheet" href="assets/css/venobox.min.css">
-      <link rel="stylesheet" href="assets/css/animate.min.css">
-      <link rel="stylesheet" href="assets/css/keyframe-animation.css">
-      <link rel="stylesheet" href="assets/css/daterangepicker.css">
-      <link rel="stylesheet" href="assets/css/odometer.min.css">
-      <link rel="stylesheet" href="assets/css/nice-select.css">
-      <link rel="stylesheet" href="assets/css/swiper.min.css">
-      <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verizon | internetreseller</title>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+      });
+    });
+    function toggleFaq(id) {
+      const answer = document.getElementById(`faq-answer-${id}`);
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    }
+    const slider = document.querySelector('.plans-slider');
+    const nextArrow = document.querySelector('.plans-next-arrow');
+    const prevArrow = document.querySelector('.plans-prev-arrow');
+
+    let scrollAmount = 0;
+
+    nextArrow.addEventListener('click', () => {
+      slider.scrollBy({ top: 0, left: 300, behavior: 'smooth' });
+      scrollAmount += 300;
+    });
+
+    prevArrow.addEventListener('click', () => {
+      slider.scrollBy({ top: 0, left: -300, behavior: 'smooth' });
+      scrollAmount -= 300;
+    });
+  </script>
+  <link rel="stylesheet" href="./assets//css/verizon.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/venobox.min.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/keyframe-animation.css">
+  <link rel="stylesheet" href="assets/css/daterangepicker.css">
+  <link rel="stylesheet" href="assets/css/odometer.min.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
   <header class="header sticky-active">
     <div class="middle-header">
-        <div class="container">
-            <div class="middle-header-inner">
-                <div class="footer-logo">
-                    InternetReseller
-                 </div>
-                <div class="header-items-wrap">
-                    <div class="header-item">
-                        <div class="icon"><i class="fa-sharp fa-solid fa-phone"></i></div>
-                        <div class="content">
-                            <span>Call Us 24/7</span>
-                            <a href="tel:+18884195414">+1(888)-419-5414</a>
-                        </div>
-                    </div>
-                    <div class="header-item">
-                        <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i></div>
-                        <div class="content">
-                            <span>Mail For Support</span>
-                            <a href="info@internetreseller.us">info@internetreseller.us</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="middle-header-inner">
+          <div class="footer-logo">
+            InternetReseller
+          </div>
+          <div class="header-items-wrap">
+            <div class="header-item">
+              <div class="icon"><i class="fa-sharp fa-solid fa-phone"></i></div>
+              <div class="content">
+                <span>Call Us 24/7</span>
+                <a href="tel:+18884195414">+1(888)-419-5414</a>
+              </div>
             </div>
+            <div class="header-item">
+              <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i></div>
+              <div class="content">
+                <span>Mail For Support</span>
+                <a href="info@internetreseller.us">info@internetreseller.us</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="primary-header">
-        <div class="container">
-            <div class="primary-header-inner">
-              <div class="header-logo d-lg-none">
-                <a href="index.html" style="font-size:20px;font-weight: 900;color: black;">
-                    InternetReseller
-                </a>
+      <div class="container">
+        <div class="primary-header-inner">
+          <div class="header-logo d-lg-none">
+            <a href="index.html" style="font-size:20px;font-weight: 900;color: black;">
+              InternetReseller
+            </a>
+          </div>
+          <div class="header-menu-wrap">
+            <div class="mobile-menu-items">
+              <ul>
+                <li class="menu-item-has-children active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children active">
+                  <a href="internet.html">Internet</a>
+                </li>
+                <li class="menu-item-has-children active">
+                  <a href="homephone.html">HomePhone</a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Policies</a>
+                  <ul>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-condition.html">Terms And Condition</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Providers</a>
+                  <ul>
+                    <li><a href="spectrum.html">Spectrum</a></li>
+                    <li><a href="verizon.html">Verizon</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-                <div class="header-menu-wrap">
-                    <div class="mobile-menu-items">
-                        <ul>
-                            <li class="menu-item-has-children active">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="menu-item-has-children active">
-                                <a href="internet.html">Internet</a>
-                            </li>
-                            <li class="menu-item-has-children active">
-                                <a href="homephone.html">HomePhone</a>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">Policies</a>
-                                <ul>
-                                    <li><a href="disclaimer.html">Disclaimer</a></li>
-                                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-and-condition.html">Terms And Condition</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">Providers</a>
-                                <ul>
-                                    <li><a href="spectrum.html">Spectrum</a></li>
-                                    <li><a href="verizon.html">Verizon</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /.header-menu-wrap -->
-                <div class="header-right-wrap">
-                    <div class="header-right">
-                        <!-- <a href="contact.html" class="header-btn">Book Appointment</a>
+          </div>
+          <!-- /.header-menu-wrap -->
+          <div class="header-right-wrap">
+            <div class="header-right">
+              <!-- <a href="contact.html" class="header-btn">Book Appointment</a>
                             <div class="search-icon dl-search-icon">
                                 <i class="fa-regular fa-magnifying-glass"></i>
                             </div> -->
-                        <div class="sidebar-icon">
-                            <button class="sidebar-trigger open">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- /.header-right -->
-                </div>
+              <div class="sidebar-icon">
+                <button class="sidebar-trigger open">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
             </div>
-            <!-- /.primary-header-inner -->
+            <!-- /.header-right -->
+          </div>
         </div>
+        <!-- /.primary-header-inner -->
+      </div>
     </div>
-</header>
-      <header class="header-main">
-        <!-- <a href="tel:+1(855)-316-1700">
+  </header>
+  <header class="header-main">
+    <!-- <a href="tel:+1(855)-316-1700">
           <div class="overlay">
             <div class="popup">
               <div class="popupHeader" style="background: black"></div>
@@ -187,685 +189,728 @@
             </div>
           </div>
         </a> -->
-        <div class="container">
-          <div class="header-promo">
-            <div class="header-promo-inner">
-              <div class="logo">
-                <img
-                  src="./assets/img/verizon/logo.png"
-                  width=""
-                  height=""
-                  alt="Logo"
-                  class="logo"
-                  style="width: 200px !important"
-                >
-              </div>
-              <div class="promo-text">
-                <p class="text-two">Get Verizon Home Services</p>
-                <p class="text-three">Check if Verizon Home Internet is available.</p>
-              </div>
-              
+    <div class="container">
+      <div class="header-promo">
+        <div class="header-promo-inner">
+          <div class="logo">
+            <img src="./assets/img/verizon/logo.png" width="" height="" alt="Logo" class="logo"
+              style="width: 200px !important">
+          </div>
+          <div class="promo-text">
+            <p class="text-two">Get Verizon Home Services</p>
+            <p class="text-three">Check if Verizon Home Internet is available.</p>
+            <a style="color: black;font-weight: 900;font-size: 20px;" href="tel:+1(855)-316-1700">+1(855)-316-1700</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="heading-txt-btn-main-rapo my-5">
+            <div class="heading my-5">
+              <h1>myHome</h1>
+              <p>
+                Create the Verizon Fios plans you want and only<br>
+                pay for what you need
+              </p>
+              <a href="tel:+18553161700">Call Us</a>
             </div>
           </div>
         </div>
-      </header>
-      
-      <section class="banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="heading-txt-btn-main-rapo my-5">
-                <div class="heading my-5">
-                  <h1>myHome</h1>
-                  <p>
-                    Create the plan you want and only<br>
-                    pay for what you need
-                  </p>
-                  <a href="tel:+18884195414">Call Us</a>
-                </div>
-              </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-BannerCard">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="Banner-card">
+            <div class="card-body">
+              <h3>Choose your internet plan</h3>
+              <p>
+                Pick from our simple options for fast, reliable home internet. Plans start at $35/mo. with Auto Pay &
+                select 5G mobile plans
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      
-      <section class="section-BannerCard">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="Banner-card">
-                <div class="card-body">
-                  <h3>Choose your internet plan</h3>
-                  <p>
-                    Pick from our simple options for fast, reliable home internet. Plans start at $35/mo. with Auto Pay &
-                    select 5G mobile plans
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="Banner-card">
-                <div class="card-body">
-                  <h3>Add your entertainment and save</h3>
-                  <p>
-                    Like Netflix & Max for $10/mo. Disney+, Hulu, ESPN+ for $10/mo. Save big on the entertainment you love​
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center text-center ">
-              <div class="Banner-card">
-                <div class="card-body">
-                  <h3>The price is guaranteed</h3>
-                  <p>No hidden fees, equipment charges or unexpected price hikes​</p>
-                </div>
-              </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="Banner-card">
+            <div class="card-body">
+              <h3>Add your entertainment and save</h3>
+              <p>
+                Like Netflix & Max for $10/mo. Disney+, Hulu, ESPN+ for $10/mo. Save big on the entertainment you love​
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <div class="servicearea-parent">
-        <div class="servicearea-main">
-          <p class="servicearea-header">Check which internet service is available in your area</p>
-          <p class="servicearea-description">
-            Find out whether Fios Home Internet, 5G Home Internet or LTE Home Internet is available in your area
-          </p>
-          <a class="servicearea-button" href="tel:+1(855)-316-1700"> Call Us </a>
+        <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center text-center ">
+          <div class="Banner-card">
+            <div class="card-body">
+              <h3>The price is guaranteed</h3>
+              <p>No hidden fees, equipment charges or unexpected price hikes​</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <div class="servicearea-parent">
+    <div class="servicearea-main">
+      <p class="servicearea-header">Check which internet service is available in your area</p>
+      <p class="servicearea-description">
+        Find out whether Fios Home Internet, 5G Home Internet or LTE Home Internet is available in your area
+      </p>
+      <a class="servicearea-button" href="tel:+1(855)-316-1700"> Call Us </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated"
+      style="border: 4px solid black;border-radius: 30px;padding: 40px 40px;" data-wow-duration="1500ms"
+      data-wow-delay="400ms">
+      <!-- pricing-package-one-box -->
+      <div class="pricing-package-one-box">
+        <div class="box-icon">
+          <i class="flaticon-home"></i>
+        </div>
+        <!-- box-title -->
+        <div class="box-title">
+          <h4>200 Mbps</h4>
+          <span>Stream and download movies, shows and photos.</span>
+
+        </div>
+        <!-- box-icon -->
+
+
+        <!-- box-item-list -->
+        <ul class="box-item-list">
+          <li><i class="icon-angle-double-right"></i>Per month w/ Auto Pay + taxes &amp; equip. charges.</li>
+          <li><i class="icon-angle-double-right"></i>Disney+ on us for 12 months ($6.99/mo. after)</li>
+          <li><i class="icon-angle-double-right"></i>Genie HD DVR to store over 200 hours of TV</li>
+
+        </ul>
+        <!-- box-price -->
+        <div class="box-price">
+          <h3>$39.99<span>/per month</span></h3>
+        </div>
+        <!-- box-btn -->
+        <div class="box-btn">
+          <a href="tel:+18553161700" class="btn btn-small-primary btn-bg-white">Call Now +1(855)-316-1700</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated"
+      style="border: 4px solid black;border-radius: 30px;padding: 40px 40px;" data-wow-duration="1500ms"
+      data-wow-delay="200ms">
+      <!-- pricing-package-one-box -->
+      <div class="pricing-package-one-box">
+        <div class="box-icon">
+          <i class="flaticon-smart-tv-1"></i>
+        </div>
+        <!-- box-title -->
+        <div class="box-title">
+          <h4>Your Fios TV</h4>
+          <span>125+ channels. Choose 5 of your favorite channels and we'll recommend a package based on your
+            preferences.</span>
+
+        </div>
+        <!-- box-icon -->
+
+        <!-- box-item-list -->
+        <ul class="box-item-list">
+          <li><i class="icon-angle-double-right"></i>Per month + taxes &amp; equip. charges.</li>
+          <li><i class="icon-angle-double-right"></i>Disney+ on us for 12 months ($6.99/mo. after)</li>
+          <li><i class="icon-angle-double-right"></i>Genie HD DVR to store over 200 hours of TV</li>
+
+        </ul>
+        <!-- box-price -->
+        <div class="box-price">
+          <h3>$50.00<span>/per month</span></h3>
+        </div>
+        <!-- box-btn -->
+        <div class="box-btn">
+          <a href="tel:+18553161700" class="btn btn-small-primary btn-bg-white">Call Now +1(855)-316-1700</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated"
+      style="border: 4px solid black;border-radius: 30px;padding: 40px 40px;" data-wow-duration="1500ms"
+      data-wow-delay="600ms">
+      <!-- pricing-package-one-box -->
+      <div class="pricing-package-one-box">
+        <!-- box-icon -->
+        <div class="box-icon">
+          <i class="flaticon-internet-of-things"></i>
+        </div>
+        <!-- box-title -->
+        <div class="box-title">
+          <h4>Home Phone</h4>
+          <span>Get all the basics with unlimited talk, text and data. And never worry about overage charges
+            again.</span>
+
+        </div>
+
+        <!-- box-item-list -->
+        <ul class="box-item-list">
+          <li><i class="icon-angle-double-right"></i>Per Line per month. Plus taxes &amp; fees</li>
+          <li><i class="icon-angle-double-right"></i>5G access included with a 5G phone. A $10/mo value.</li>
+          <li><i class="icon-angle-double-right"></i>Unlimited 4G LTE (+25 GB premium data)</li>
+
+        </ul>
+        <!-- box-price -->
+        <div class="box-price">
+          <h3>$80.00<span>/per month</span></h3>
+        </div>
+        <!-- box-btn -->
+        <div class="box-btn">
+          <a href="package.html" class="btn btn-small-primary btn-bg-white">Choose Package<i class="icon-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-two">
+    <div class="cardsSection-main">
+      <p class="cardsSection-title">More ways to save</p>
+      <div class="cards-section">
+        <div class="card-two">
+          <img src="./assets//img/verizon/HomeHub_level4Bento_tile1_d.jpeg"
+            alt="Find out if you qualify for discounted home internet" class="card-image" height="" width="">
+          <div class="card-content">
+            <h2 class="card-two-title">Find out if you qualify for discounted home internet</h2>
+            <p class="card-two-subtitle">You could save up to $20/mo with Verizon Forward</p>
+            <a href="tel:+1(855)-316-1700" class="card-link">Call us for Learn more &gt;</a>
+          </div>
+        </div>
+        <div class="card-two">
+          <img src="./assets//img/verizon/HomeHub_level4Bento_tile2_d.jpeg"
+            alt="Find out if you qualify for discounted home internet" class="card-image" height="" width="">
+          <div class="card-content">
+            <h2 class="card-two-title">Save up to $300 a year with mobile & home</h2>
+            <p class="card-two-subtitle">When you add select home internet plans to select 5G mobile plans.</p>
+            <a href="tel:+1(855)-316-1700" class="card-link">Call us for Learn more &gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="services-one">
+
+    <div class="container">
+      <!-- section-title -->
+      <div class="section-title text-center">
+        <i class="icon-main-icon"></i>
+        <span>What We Offer</span>
+      </div>
+      <!-- section-main-title -->
+      <div class="section-main-title text-center">
+        <h2 class="mx-auto">Why choose Verizon <span class="section-main-title-primery">Home Internet?
+          </span> </h2>
       </div>
       <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated" style="border: 4px solid black;border-radius: 30px;padding: 40px 40px;" data-wow-duration="1500ms" data-wow-delay="400ms">
-         <!-- pricing-package-one-box -->
-         <div class="pricing-package-one-box">
-                           <div class="box-icon">
-             <i class="flaticon-home"></i>
-           </div>
-           <!-- box-title -->
-           <div class="box-title">
-                                 <h4>200 Mbps</h4>
-             <span>Stream and download movies, shows and photos.</span>
-           
-           </div>
-           <!-- box-icon -->
-           
-                           
-           <!-- box-item-list -->
-           <ul class="box-item-list">
-                               <li><i class="icon-angle-double-right"></i>Per month w/ Auto Pay + taxes &amp; equip. charges.</li>
-             <li><i class="icon-angle-double-right"></i>Disney+ on us for 12 months ($6.99/mo. after)</li>
-             <li><i class="icon-angle-double-right"></i>Genie HD DVR to store over 200 hours of TV</li>
-              
-           </ul>
-           <!-- box-price -->
-           <div class="box-price">
-             <h3>$39.99<span>/per month</span></h3>
-           </div>
-           <!-- box-btn -->
-           <div class="box-btn">
-             <a href="tel:18886177138" class="btn btn-small-primary btn-bg-white">Call Now (888) 617-7138</a>
-           </div>
-         </div>
-       </div>
-       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated" style="border: 4px solid black;border-radius: 30px;padding: 40px 40px;" data-wow-duration="1500ms" data-wow-delay="200ms">
-         <!-- pricing-package-one-box -->
-         <div class="pricing-package-one-box">
-                           <div class="box-icon">
-             <i class="flaticon-smart-tv-1"></i>
-           </div>
-           <!-- box-title -->
-           <div class="box-title">
-                               <h4>Your Fios TV</h4>
-             <span>125+ channels. Choose 5 of your favorite channels and we'll recommend a package based on your preferences.</span>
-             
-           </div>
-           <!-- box-icon -->
-           
-           <!-- box-item-list -->
-           <ul class="box-item-list">
-             <li><i class="icon-angle-double-right"></i>Per month + taxes &amp; equip. charges.</li>
-             <li><i class="icon-angle-double-right"></i>Disney+ on us for 12 months ($6.99/mo. after)</li>
-             <li><i class="icon-angle-double-right"></i>Genie HD DVR to store over 200 hours of TV</li>
-              
-           </ul>
-           <!-- box-price -->
-           <div class="box-price">
-             <h3>$50.00<span>/per month</span></h3>
-           </div>
-           <!-- box-btn -->
-           <div class="box-btn">
-             <a href="tel:18886177138" class="btn btn-small-primary btn-bg-white">Call Now (888) 617-7138</a>
-           </div>
-         </div>
-       </div>
-      
-       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated" style="border: 4px solid black;border-radius: 30px;padding: 40px 40px;" data-wow-duration="1500ms" data-wow-delay="600ms">
-         <!-- pricing-package-one-box -->
-         <div class="pricing-package-one-box">
-                           <!-- box-icon -->
-           <div class="box-icon">
-             <i class="flaticon-internet-of-things"></i>
-           </div>
-           <!-- box-title -->
-           <div class="box-title">
-                               <h4>Home Phone</h4>
-             <span>Get all the basics with unlimited talk, text and data. And never worry about overage charges again.</span>
-             
-           </div>
-           
-           <!-- box-item-list -->
-           <ul class="box-item-list">
-             <li><i class="icon-angle-double-right"></i>Per Line per month. Plus taxes &amp; fees</li>
-             <li><i class="icon-angle-double-right"></i>5G access included with a 5G phone. A $10/mo value.</li>
-             <li><i class="icon-angle-double-right"></i>Unlimited 4G LTE (+25 GB premium data)</li>
-              
-           </ul>
-           <!-- box-price -->
-           <div class="box-price">
-             <h3>$80.00<span>/per month</span></h3>
-           </div>
-           <!-- box-btn -->
-           <div class="box-btn">
-             <a href="package.html" class="btn btn-small-primary btn-bg-white">Choose Package<i class="icon-1"></i></a>
-           </div>
-         </div>
-       </div>
-     </div>
-      <div class="container-two">
-        <div class="cardsSection-main">
-          <p class="cardsSection-title">More ways to save</p>
-          <div class="cards-section">
-            <div class="card-two">
-              <img
-                src="./assets//img/verizon/HomeHub_level4Bento_tile1_d.jpeg"
-                alt="Find out if you qualify for discounted home internet"
-                class="card-image"
-                height=""
-                width=""
-              >
-              <div class="card-content">
-                <h2 class="card-two-title">Find out if you qualify for discounted home internet</h2>
-                <p class="card-two-subtitle">You could save up to $20/mo with Verizon Forward</p>
-                <a href="tel:+1(855)-316-1700" class="card-link">Call us for Learn more &gt;</a>
-              </div>
+        <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 text-center wow fadeInUp animated" data-wow-duration="1500ms"
+          data-wow-delay="100ms">
+          <!-- services-one-box -->
+          <div class="services-one-box">
+            <div class="services-one-icon">
+              <i class="flaticon-fiber"></i>
             </div>
-            <div class="card-two">
-              <img
-                src="./assets//img/verizon/HomeHub_level4Bento_tile2_d.jpeg"
-                alt="Find out if you qualify for discounted home internet"
-                class="card-image"
-                height=""
-                width=""
-              >
-              <div class="card-content">
-                <h2 class="card-two-title">Save up to $300 a year with mobile & home</h2>
-                <p class="card-two-subtitle">When you add select home internet plans to select 5G mobile plans.</p>
-                <a href="tel:+1(855)-316-1700" class="card-link">Call us for Learn more &gt;</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="plans-section mt-5">
-        <div class="container">
-          <div class="plans-slider">
-            <div class="row">
-              <!-- Plan Card 1 -->
-              <div class="col-lg-6 col-md-3 col-sm-12">
-                <div class="plans-card">
-                  <div class="plans-heading-txt">
-                    <div class="plans-heading">
-                      <h3>The ultimate iPhone plan, with Apple One</h3>
-                    </div>
-                    <div class="plans-txt">
-                      <h6>$65 <span>/line*</span></h6>
-                      <span class="plans-span-two">
-                        $9.95/line<br>
-                        perk savings
-                      </span>
-                    </div>
-                  </div>
-                  <div class="plans-red-box">
-                    <h3>Unlimited Ultimate</h3>
-                  </div>
-                  <div class="plans-brands-box mt-3">
-                    <p>Apple One</p>
-                    <img
-                      class="img-fluid-two"
-                      src="./assets//img/verizon/perk-tile-apple-one-3x2-default.webp"
-                      alt="Apple One"
-                      width=""
-                      height=""
-                    >
-                    <span>Apple One</span>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Plan Card 2 -->
-              <div class="col-lg-6 col-md-3 col-sm-12">
-                <div class="plans-card">
-                  <div class="plans-heading-txt">
-                    <div class="plans-heading">
-                      <h3>
-                        If you love <br>
-                        movies, series <br>
-                        & sports
-                      </h3>
-                    </div>
-                    <div class="plans-txt">
-                      <h6>$65 <span>/line*</span></h6>
-                      <span class="plans-span-two">
-                        $43.99/line<br>
-                        perk savings
-                      </span>
-                    </div>
-                  </div>
-                  <div class="plans-red-box">
-                    <h3>Unlimited Ultimate</h3>
-                  </div>
-                  <div class="plans-footer mt-3">
-                    <div class="plans-footer-first">
-                      <div class="plans-card-overlay">
-                        <img
-                          class="img-fluid"
-                          src="./assets//img/verizon/perk-tile-disney-bundle-3x4-default.webp"
-                          alt="Disney Bundle"
-                          width=""
-                          height=""
-                        >
-      
-                        <div class="plans-card-overlay-text">
-                          <h4>Disney Bundle</h4>
-                          <div class="plans-card-footer">
-                            <img
-                              class="img-fluid"
-                              src="./assets//img/verizon/perk-tile-disney-bundle-logo.svg"
-                              alt="Disney Bundle Logo"
-                              width=""
-                              height=""
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="plans-footer-second">
-                      <div class="plans-card-overlay">
-                        <img
-                          class="img-fluid"
-                          src="./assets//img/verizon/perk-tile-mobile-hotspot-3x4-default.webp"
-                          alt="100 GB Mobile Hotspot"
-                          width=""
-                          height=""
-                        >
-      
-                        <div class="plans-card-overlay-text">
-                          <h4>100 GB Mobile Hotspot</h4>
-                          <div class="plans-card-footer">
-                            <img
-                              class="img-fluid"
-                              src="./assets//img/verizon/perk-tile-mobile-hotspot-logo.svg"
-                              alt="100 GB Mobile Hotspot"
-                              width=""
-                              height=""
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Plan Card 3 -->
-              <div class="col-lg-6 col-md-3 col-sm-12 my-5">
-                <div class="plans-card">
-                  <div class="plans-heading-txt">
-                    <div class="plans-heading">
-                      <h3>
-                        If you love <br>
-                        streaming & original content
-                      </h3>
-                    </div>
-                    <div class="plans-txt">
-                      <h6>$55 <span>/line*</span></h6>
-                      <span class="plans-span-two">
-                        $6.98/line<br>
-                        perk savings
-                      </span>
-                    </div>
-                  </div>
-                  <div class="plans-red-box">
-                    <h3>Unlimited Ultimate</h3>
-                  </div>
-                  <div class="plans-footer mt-3">
-                    <div class="plans-footer-first">
-                      <div class="plans-card-overlay">
-                        <img
-                          class="img-fluid"
-                          src="./assets//img/verizon/perk-tile-net-max-3x2-default.webp"
-                          alt="Card image"
-                          width=""
-                          height=""
-                        >
-                        <div class="plans-card-overlay-text">
-                          <h4>Streaming Service</h4>
-                          <div class="plans-card-footer">
-                            <img
-                              class="img-fluid"
-                              src="./assets//img/verizon/20x20SVG_Transparent.svg"
-                              alt="Card image"
-                              width=""
-                              height=""
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Plan Card 4 -->
-              <div class="col-lg-6 col-md-3 col-sm-12 my-5">
-                <div class="plans-card">
-                  <div class="plans-heading-txt">
-                    <div class="plans-heading">
-                      <h3>
-                        For easy <br>
-                        shopping, savings & more
-                      </h3>
-                    </div>
-                    <div class="plans-txt">
-                      <h6>$40 <span>/line*</span></h6>
-                      <span class="plans-span-two">
-                        $2.95/line<br>
-                        perk savings
-                      </span>
-                    </div>
-                  </div>
-                  <div the "plans-red-box">
-                    <h3>Unlimited Ultimate</h3>
-                  </div>
-                  <div class="plans-footer mt-3">
-                    <div class="plans-footer-first">
-                      <div class="plans-card-overlay">
-                        <img
-                          class="img-fluid"
-                          src="./assets//img/verizon/perk-tile-walmart-plus-membership-3x2-default.webp"
-                          alt="Card image"
-                          width=""
-                          height=""
-                        >
-                        <div class="plans-card-overlay-text">
-                          <h4>Shopping Service</h4>
-                          <div class="plans-card-footer">
-                            <img
-                              class="img-fluid"
-                              src="./assets//img/verizon/perk-tile-walmart-plus-membership-logo.svg"
-                              alt="Card image"
-                              width=""
-                              height=""
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="container">
-        <div class="faqs-main">
-          <div class="faqs-container">
-            <p class="Faqs-text">
-              Have questions?<br>
-              We’ve got answers.
-            </p>
-            <div class="faqs-list">
-              <!-- FAQ Item 1 -->
-              <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(1)">
-                  Where is Verizon Home Internet available? And what home internet services are available to me?
-                  <span class="faq-toggle">&#9660;</span>
-                </div>
-                <div class="faq-answer" id="faq-answer-1" style="display: none;">
-                  It's all about the internet technology, how it's delivered to your home and where you live. Fios Home
-                  Internet is widely available in metro and suburban areas of New England and the Mid-Atlantic. 5G Home
-                  Internet is now in more and more cities around the country. Since LTE Home Internet uses the wireless 4G LTE
-                  network to deliver home broadband internet service, it is available in most parts of the country where Fios
-                  and 5G Home Internet are not available.
-                  <br>
-                  To see which Verizon Home Internet service is available where you live, enter your address above and click
-                  check availability.
-                </div>
-              </div>
-              <!-- FAQ Item 2 -->
-              <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(2)">
-                  What is 5G Home Internet?
-                  <span class="faq-toggle">&#9660;</span>
-                </div>
-                <div class="faq-answer" id="faq-answer-2" style="display: none;">
-                  <p>
-                    5G Home Internet is ultra-fast, ultra-simple wireless home internet powered by 5G Ultra
-                    Wideband, giving you the ultra-powerful network performance and speed you need.
-                  </p>
-                  <ul>
-                    <li>Reliable and fast to power your whole home with lots of devices connected.</li>
-                    <li>No annual contracts, extra fees, data overages or equipment charges.</li>
-                    <li>Attractive pricing with Auto Pay and when you combine it with select 5G Mobile plans.</li>
-                    <li>Service price guaranteed for up to 3 years.</li>
-                    <li>Get up to a $500 credit to help cover any early termination fees when switching.</li>
-                    <li>Simple plug and play self setup, with 30 days support included.</li>
-                  </ul>
-                  <p>
-                    5G Ultra Wideband is now in more and more places around the country, so more people than
-                    ever can experience Verizon’s exceptional broadband internet at home.
-                  </p>
-                  <p>To see if your address qualifies, enter your address above and click check availability.</p>
-                </div>
-              </div>
-              <!-- FAQ Item 3 -->
-              <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(3)">
-                  What is Fios Internet?
-                  <span class="faq-toggle">&#9660;</span>
-                </div>
-                <div class="faq-answer" id="faq-answer-3" style="display: none;">
-                  Fios Internet is a 100% fiber-optic network that delivers some of the fastest internet speeds to millions of
-                  homes in the mid-Atlantic and New England. It uses fiber optics to transmit data at the speed of light,
-                  providing a faster internet connection and powerful bandwidth for multiple devices. Verizon is one of the
-                  only internet service providers to offer matching download and upload speeds on most of our plans, which is
-                  a major advantage when you’re video chatting, gaming and sharing large files or images.
-                </div>
-              </div>
-              <!-- FAQ Item 4 -->
-              <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(4)">
-                  What is LTE Home Internet?
-                  <span class="faq-toggle">&#9660;</span>
-                </div>
-                <div class="faq-answer" id="faq-answer-4" style="display: none;">
-                  LTE Home Internet is home broadband internet service that brings the Verizon 4G LTE network to your
-                  residence. It is available in certain areas where there are no other Verizon broadband options (Fios, 5G
-                  Home, etc.). With LTE Home Internet, you can stream video at 1080p, plus you can enjoy unlimited data with
-                  no data usage caps.
-                </div>
-              </div>
-              <!-- FAQ Item 5 -->
-              <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(5)">
-                  Can Verizon help cover my early termination fee when I switch to Verizon Home Internet?
-                  <span class="faq-toggle">&#9660;</span>
-                </div>
-                <div class="faq-answer" id="faq-answer-5" style="display: none;">
-                  Yes! If you are stuck in a contract for home internet, switch to Verizon Home Internet and get up to $500
-                  credit to help cover your early termination fee. If you're eligible to get a bill credit for up to $500 for
-                  an early termination fee charged by your previous home internet provider, here's how to get it. If you order
-                  Fios home internet, see the Fios Early Termination Fee instructions. If you order 5G Home, go to the 5G Home
-                  Internet bill credit page.
-                  <br>
-                  You must submit your request within 90 days of your Verizon Home Internet setup.
-                </div>
-              </div>
-              <!-- FAQ Item 6 -->
-              <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(6)">
-                  Can I transfer my current Verizon Home Internet service to a new address?
-                  <span class="faq-toggle">&#9660;</span>
-                </div>
-                <div class="faq-answer" id="faq-answer-6" style="display: none;">
-                  We make it easy to stay connected. Check out our page on moving Verizon Home Internet service or log into
-                  your account to get started.
-                </div>
-              </div>
-              <!-- FAQ Item 7 -->
-              <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(7)">
-                  What is Verizon Whole-Home Wi-Fi?
-                  <span class="faq-toggle">&#9660;</span>
-                </div>
-                <div class="faq-answer" id="faq-answer-7" style="display: none;">
-                  Verizon Whole-Home Wi-Fi includes 2 features that help you improve Wi-Fi coverage in your home:
-                  <ul>
-                    <li>Wi-Fi Health Check in the My Verizon app, to optimize your Wi-Fi network.</li>
-                    <li>An optional Wi-Fi Extender* for better signal strength in hard-to-reach places.</li>
-                  </ul>
-                  *If you cancel service or change to a plan that does not include Whole-Home Wi-Fi, you must return the
-                  Verizon-owned Wi-Fi Extender or you'll be charged an unreturned equipment fee of $175.
-                </div>
-              </div>
-              <!-- FAQ Item 8 -->
-              <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(8)">
-                  What affordable Verizon Home Internet options are available?
-                  <span class="faq-toggle">&#9660;</span>
-                </div>
-                <div class="faq-answer" id="faq-answer-8" style="display: none;">
-                  Verizon participated in ACP, the Affordable Connectivity Program, while the program was active prior to the
-                  last fully funded month of April 2024. Verizon now provides reduced-cost internet to eligible new or
-                  existing home Internet customers who have qualified for Lifeline, SNAP, WIC, and other assistance programs
-                  within 180 days of application or received a Federal Pell Grant within the past year with our Verizon
-                  Forward program. Qualifying customers receive a service discount on their Fios, 5G Home or LTE Home Internet
-                  plan price. Learn more here
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section>
-        <div class="container">
-          <div class="disclaimer-section">
-            <h2>Disclaimer</h2>
+            <h3>Simplify Your Billing with Verizon 5G</h3>
+
+
             <p>
-              This is not an official website of Verizon but is the Official Site of internetreseller.us (Marketing Partner). We may send
-              updates to the mobile number/email ID registered with us. The content is for information purposes only and does
-              not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and
-              properties mentioned are subject to availability. Images are for representation purposes only. The logos and
-              images used on this website are the exclusive property of their respective owners and are protected under
-              applicable copyright laws. We do not claim any ownership or rights to these materials and they are used on this
-              website solely for informational purposes.
-            </p>
+              Keep track of your monthly expenses effortlessly with Verizon 5G. Whether you opt for multiple 5G services
+              or just one, everything comes on a single, consolidated bill. This streamlined approach means you spend
+              less time sorting through various charges and more time enjoying your services.</p>
+
           </div>
         </div>
-      </section>
-      <footer class="footer-section pt-120 overflow-hidden">
-        <div class="disclaimer">
-            <h3 style="color: white;">Disclaimer</h3>
-        <p style="text-align: center;color: white;">This is not an official website of Spectrum, Verizon, CenturyLink, AT&T, Frontier and Xfinity or any Telecommunication Service Provider, but is the Official Site of internetreseller.us (Marketing Partner). We may send updates to the mobile number/email ID registered with us. The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. Images are for representation purposes only. The logos and images used on this website are the exclusive property of their respective owners and are protected under applicable copyright laws. internetreseller.us does not claim any ownership or rights to these materials and they are used on this website solely for informational purposes.</p>
-        </div>
-        <div class="footer-shape">
-            <img src="assets/img/shapes/footer-shape.png" alt="shape">
-        </div>
-
-        <div class="container">
-
-            <div class="row footer-wrap">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <div class="widget-header">
-                            <div class="footer-logo">
-                               InternetReseller
-                            </div>
-                        </div>
-                       <p>312 W 2ND, <br>CASPER WY 82601, USA </p>
-                       <p>+1(888)-419-5414</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget widget-space">
-                        <div class="widget-header">
-                            <h3 class="widget-title">Quick Links</h3>
-                        </div>
-                        <ul class="footer-list">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="disclaimer.html">Disclaimer</a></li>
-                            <li><a href="privacypolicy.html">Privacy policy</a></li>
-                            <li><a href="terms-and-condition.html">Terms And Condition</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-widget widget-space">
-                        <div class="widget-header">
-                            <h3 class="widget-title">Our Newsletter</h3>
-                        </div>
-                        <p>Sign up to Private's weekly newsletter to get the latest updates.</p>
-                        <div class="footer-form mb-20">
-                            <form action="#" class="rr-subscribe-form">
-                                <input class="form-control" type="email" name="email" placeholder="Email address">
-                                <input type="hidden" name="action" value="mailchimpsubscribe">
-                                <button class="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 text-center wow fadeInUp animated" data-wow-duration="1500ms"
+          data-wow-delay="300ms">
+          <!-- services-one-box -->
+          <div class="services-one-box">
+            <div class="services-one-icon">
+              <i class="flaticon-tv"></i>
             </div>
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row copyright-content">
-                    <div class="col-md-6">
-                        <p>© 2024 InternetReseller. All Rights Reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="copy-list">
-                            <li><a href="terms-and-condition.html">Terms & Conditions</a></li>
-                            <li><a href="privacypolicy.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
-    <!--scrollup-->
 
-    <!-- JS here -->
-    <script src="assets/js/vendor/jquary-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/bootstrap-bundle.js"></script>
-    <script src="assets/js/vendor/imagesloaded-pkgd.js"></script>
-    <script src="assets/js/vendor/waypoints.min.js"></script>
-    <script src="assets/js/vendor/venobox.min.js"></script>
-    <script src="assets/js/vendor/odometer.min.js"></script>
-    <script src="assets/js/vendor/meanmenu.js"></script>
-    <script src="assets/js/vendor/smooth-scroll.js"></script>
-    <script src="assets/js/vendor/jquery.isotope.js"></script>
-    <script src="assets/js/vendor/wow.min.js"></script>
-    <script src="assets/js/vendor/swiper.min.js"></script>
-    <script src="assets/js/vendor/moment.min.js"></script>
-    <script src="assets/js/vendor/daterangepicker.min.js"></script>
-    <script src="assets/js/vendor/split-type.min.js"></script>
-    <script src="assets/js/vendor/gsap.min.js"></script>
-    <script src="assets/js/vendor/scroll-trigger.min.js"></script>
-    <script src="assets/js/vendor/nice-select.js"></script>
-    <script src="assets/js/contact.js"></script>
-    <script src="assets/js/main.js"></script>
+
+
+            <h3> Hassle-Free Installation by Experts</h3>
+            <p>With Verizon 5G, you can sit back while the experts handle everything. Our full-service installation
+              ensures a professional technician will set up your devices and connect them to the 5G network swiftly and
+              effectively, saving you the trouble of dealing with technical details.</p>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-lg-4 col-md-12 col-sm-12 text-center wow fadeInUp animated" data-wow-duration="1500ms"
+          data-wow-delay="600ms">
+          <!-- services-one-box -->
+          <div class="services-one-box">
+            <div class="services-one-icon">
+              <i class="flaticon-energy-management"></i>
+            </div>
+
+
+
+            <h3> Customize Your Fios Plan with 5G Mix and Match</h3>
+            <p>Experience flexibility and savings with our 5G Mix and Match plans. Tailor your 5G package to perfectly
+              fit your household’s needs. Choose your desired internet speed and select the TV package that suits your
+              preferences. Plus, combine fast internet with reliable home phone service—all in one personalized plan.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- services-one-bottom -->
+      <div class="services-one-bottom text-center">
+        <p>Need Any Consultation's For New Plan?
+          <a href="tel:+18553161700">Contact Us</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="plans-section mt-5">
+    <div class="container">
+      <div class="plans-slider">
+        <div class="row">
+          <!-- Plan Card 1 -->
+          <div class="col-lg-6 col-md-3 col-sm-12">
+            <div class="plans-card">
+              <div class="plans-heading-txt">
+                <div class="plans-heading">
+                  <h3>The ultimate iPhone plan, with Apple One</h3>
+                </div>
+                <div class="plans-txt">
+                  <h6>$65 <span>/line*</span></h6>
+                  <span class="plans-span-two">
+                    $9.95/line<br>
+                    perk savings
+                  </span>
+                </div>
+              </div>
+              <div class="plans-red-box">
+                <h3>Unlimited Ultimate</h3>
+              </div>
+              <div class="plans-brands-box mt-3">
+                <p>Apple One</p>
+                <img class="img-fluid-two" src="./assets//img/verizon/perk-tile-apple-one-3x2-default.webp"
+                  alt="Apple One" width="" height="">
+                <span>Apple One</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Card 2 -->
+          <div class="col-lg-6 col-md-3 col-sm-12">
+            <div class="plans-card">
+              <div class="plans-heading-txt">
+                <div class="plans-heading">
+                  <h3>
+                    If you love <br>
+                    movies, series <br>
+                    & sports
+                  </h3>
+                </div>
+                <div class="plans-txt">
+                  <h6>$65 <span>/line*</span></h6>
+                  <span class="plans-span-two">
+                    $43.99/line<br>
+                    perk savings
+                  </span>
+                </div>
+              </div>
+              <div class="plans-red-box">
+                <h3>Unlimited Ultimate</h3>
+              </div>
+              <div class="plans-footer mt-3">
+                <div class="plans-footer-first">
+                  <div class="plans-card-overlay">
+                    <img class="img-fluid" src="./assets//img/verizon/perk-tile-disney-bundle-3x4-default.webp"
+                      alt="Disney Bundle" width="" height="">
+
+                    <div class="plans-card-overlay-text">
+                      <h4>Disney Bundle</h4>
+                      <div class="plans-card-footer">
+                        <img class="img-fluid" src="./assets//img/verizon/perk-tile-disney-bundle-logo.svg"
+                          alt="Disney Bundle Logo" width="" height="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="plans-footer-second">
+                  <div class="plans-card-overlay">
+                    <img class="img-fluid" src="./assets//img/verizon/perk-tile-mobile-hotspot-3x4-default.webp"
+                      alt="100 GB Mobile Hotspot" width="" height="">
+
+                    <div class="plans-card-overlay-text">
+                      <h4>100 GB Mobile Hotspot</h4>
+                      <div class="plans-card-footer">
+                        <img class="img-fluid" src="./assets//img/verizon/perk-tile-mobile-hotspot-logo.svg"
+                          alt="100 GB Mobile Hotspot" width="" height="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Card 3 -->
+          <div class="col-lg-6 col-md-3 col-sm-12 my-5">
+            <div class="plans-card">
+              <div class="plans-heading-txt">
+                <div class="plans-heading">
+                  <h3>
+                    If you love <br>
+                    streaming & original content
+                  </h3>
+                </div>
+                <div class="plans-txt">
+                  <h6>$55 <span>/line*</span></h6>
+                  <span class="plans-span-two">
+                    $6.98/line<br>
+                    perk savings
+                  </span>
+                </div>
+              </div>
+              <div class="plans-red-box">
+                <h3>Unlimited Ultimate</h3>
+              </div>
+              <div class="plans-footer mt-3">
+                <div class="plans-footer-first">
+                  <div class="plans-card-overlay">
+                    <img class="img-fluid" src="./assets//img/verizon/perk-tile-net-max-3x2-default.webp"
+                      alt="Card image" width="" height="">
+                    <div class="plans-card-overlay-text">
+                      <h4>Streaming Service</h4>
+                      <div class="plans-card-footer">
+                        <img class="img-fluid" src="./assets//img/verizon/20x20SVG_Transparent.svg" alt="Card image"
+                          width="" height="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Card 4 -->
+          <div class="col-lg-6 col-md-3 col-sm-12 my-5">
+            <div class="plans-card">
+              <div class="plans-heading-txt">
+                <div class="plans-heading">
+                  <h3>
+                    For easy <br>
+                    shopping, savings & more
+                  </h3>
+                </div>
+                <div class="plans-txt">
+                  <h6>$40 <span>/line*</span></h6>
+                  <span class="plans-span-two">
+                    $2.95/line<br>
+                    perk savings
+                  </span>
+                </div>
+              </div>
+              <div class="plans-red-box">
+                <h3>Unlimited Ultimate</h3>
+              </div>
+              <div class="plans-footer mt-3">
+                <div class="plans-footer-first">
+                  <div class="plans-card-overlay">
+                    <img class="img-fluid"
+                      src="./assets//img/verizon/perk-tile-walmart-plus-membership-3x2-default.webp" alt="Card image"
+                      width="" height="">
+                    <div class="plans-card-overlay-text">
+                      <h4>Shopping Service</h4>
+                      <div class="plans-card-footer">
+                        <img class="img-fluid" src="./assets//img/verizon/perk-tile-walmart-plus-membership-logo.svg"
+                          alt="Card image" width="" height="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="faqs-main">
+      <div class="faqs-container">
+        <p class="Faqs-text">
+          Have questions?<br>
+          We’ve got answers.
+        </p>
+        <div class="faqs-list">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(1)">
+              Where is Verizon Home Internet available? And what home internet services are available to me?
+              <span class="faq-toggle">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="faq-answer-1" style="display: none;">
+              It's all about the internet technology, how it's delivered to your home and where you live. Fios Home
+              Internet is widely available in metro and suburban areas of New England and the Mid-Atlantic. 5G Home
+              Internet is now in more and more cities around the country. Since LTE Home Internet uses the wireless 4G
+              LTE
+              network to deliver home broadband internet service, it is available in most parts of the country where
+              Fios
+              and 5G Home Internet are not available.
+              <br>
+              To see which Verizon Home Internet service is available where you live, enter your address above and click
+              check availability.
+            </div>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(2)">
+              What is 5G Home Internet?
+              <span class="faq-toggle">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="faq-answer-2" style="display: none;">
+              <p>
+                5G Home Internet is ultra-fast, ultra-simple wireless home internet powered by 5G Ultra
+                Wideband, giving you the ultra-powerful network performance and speed you need.
+              </p>
+              <ul>
+                <li>Reliable and fast to power your whole home with lots of devices connected.</li>
+                <li>No annual contracts, extra fees, data overages or equipment charges.</li>
+                <li>Attractive pricing with Auto Pay and when you combine it with select 5G Mobile plans.</li>
+                <li>Service price guaranteed for up to 3 years.</li>
+                <li>Get up to a $500 credit to help cover any early termination fees when switching.</li>
+                <li>Simple plug and play self setup, with 30 days support included.</li>
+              </ul>
+              <p>
+                5G Ultra Wideband is now in more and more places around the country, so more people than
+                ever can experience Verizon’s exceptional broadband internet at home.
+              </p>
+              <p>To see if your address qualifies, enter your address above and click check availability.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(3)">
+              What is Fios Internet?
+              <span class="faq-toggle">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="faq-answer-3" style="display: none;">
+              Fios Internet is a 100% fiber-optic network that delivers some of the fastest internet speeds to millions
+              of
+              homes in the mid-Atlantic and New England. It uses fiber optics to transmit data at the speed of light,
+              providing a faster internet connection and powerful bandwidth for multiple devices. Verizon is one of the
+              only internet service providers to offer matching download and upload speeds on most of our plans, which
+              is
+              a major advantage when you’re video chatting, gaming and sharing large files or images.
+            </div>
+          </div>
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(4)">
+              What is LTE Home Internet?
+              <span class="faq-toggle">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="faq-answer-4" style="display: none;">
+              LTE Home Internet is home broadband internet service that brings the Verizon 4G LTE network to your
+              residence. It is available in certain areas where there are no other Verizon broadband options (Fios, 5G
+              Home, etc.). With LTE Home Internet, you can stream video at 1080p, plus you can enjoy unlimited data with
+              no data usage caps.
+            </div>
+          </div>
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(5)">
+              Can Verizon help cover my early termination fee when I switch to Verizon Home Internet?
+              <span class="faq-toggle">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="faq-answer-5" style="display: none;">
+              Yes! If you are stuck in a contract for home internet, switch to Verizon Home Internet and get up to $500
+              credit to help cover your early termination fee. If you're eligible to get a bill credit for up to $500
+              for
+              an early termination fee charged by your previous home internet provider, here's how to get it. If you
+              order
+              Fios home internet, see the Fios Early Termination Fee instructions. If you order 5G Home, go to the 5G
+              Home
+              Internet bill credit page.
+              <br>
+              You must submit your request within 90 days of your Verizon Home Internet setup.
+            </div>
+          </div>
+          <!-- FAQ Item 6 -->
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(6)">
+              Can I transfer my current Verizon Home Internet service to a new address?
+              <span class="faq-toggle">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="faq-answer-6" style="display: none;">
+              We make it easy to stay connected. Check out our page on moving Verizon Home Internet service or log into
+              your account to get started.
+            </div>
+          </div>
+          <!-- FAQ Item 7 -->
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(7)">
+              What is Verizon Whole-Home Wi-Fi?
+              <span class="faq-toggle">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="faq-answer-7" style="display: none;">
+              Verizon Whole-Home Wi-Fi includes 2 features that help you improve Wi-Fi coverage in your home:
+              <ul>
+                <li>Wi-Fi Health Check in the My Verizon app, to optimize your Wi-Fi network.</li>
+                <li>An optional Wi-Fi Extender* for better signal strength in hard-to-reach places.</li>
+              </ul>
+              *If you cancel service or change to a plan that does not include Whole-Home Wi-Fi, you must return the
+              Verizon-owned Wi-Fi Extender or you'll be charged an unreturned equipment fee of $175.
+            </div>
+          </div>
+          <!-- FAQ Item 8 -->
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(8)">
+              What affordable Verizon Home Internet options are available?
+              <span class="faq-toggle">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="faq-answer-8" style="display: none;">
+              Verizon participated in ACP, the Affordable Connectivity Program, while the program was active prior to
+              the
+              last fully funded month of April 2024. Verizon now provides reduced-cost internet to eligible new or
+              existing home Internet customers who have qualified for Lifeline, SNAP, WIC, and other assistance programs
+              within 180 days of application or received a Federal Pell Grant within the past year with our Verizon
+              Forward program. Qualifying customers receive a service discount on their Fios, 5G Home or LTE Home
+              Internet
+              plan price. Learn more here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="disclaimer-section">
+        <h2>Disclaimer</h2>
+        <p>
+          This is not an official website of Verizon but is the Official Site of internetreseller.us (Marketing
+          Partner). We may send
+          updates to the mobile number/email ID registered with us. The content is for information purposes only and
+          does
+          not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and
+          properties mentioned are subject to availability. Images are for representation purposes only. The logos and
+          images used on this website are the exclusive property of their respective owners and are protected under
+          applicable copyright laws. We do not claim any ownership or rights to these materials and they are used on
+          this
+          website solely for informational purposes.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-section pt-120 overflow-hidden">
+    <div class="disclaimer">
+      <h3 style="color: white;">Disclaimer</h3>
+      <p style="text-align: center;color: white;">This is not an official website of Spectrum, Verizon, CenturyLink,
+        AT&T, Frontier and Xfinity or any Telecommunication Service Provider, but is the Official Site of
+        internetreseller.us (Marketing Partner). We may send updates to the mobile number/email ID registered with us.
+        The content is for information purposes only and does not constitute an offer to avail of any service. Prices
+        mentioned are subject to change without notice and properties mentioned are subject to availability. Images are
+        for representation purposes only. The logos and images used on this website are the exclusive property of their
+        respective owners and are protected under applicable copyright laws. internetreseller.us does not claim any
+        ownership or rights to these materials and they are used on this website solely for informational purposes.</p>
+    </div>
+    <div class="footer-shape">
+      <img src="assets/img/shapes/footer-shape.png" alt="shape">
+    </div>
+    <div class="container">
+
+      <div class="row footer-wrap">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-widget">
+            <div class="widget-header">
+              <div class="footer-logo">
+                InternetReseller
+              </div>
+            </div>
+            <p>312 W 2ND, <br>CASPER WY 82601, USA </p>
+            <p>+1(888)-419-5414</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-widget widget-space">
+            <div class="widget-header">
+              <h3 class="widget-title">Quick Links</h3>
+            </div>
+            <ul class="footer-list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li><a href="privacypolicy.html">Privacy policy</a></li>
+              <li><a href="terms-and-condition.html">Terms And Condition</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-widget widget-space">
+            <div class="widget-header">
+              <h3 class="widget-title">Our Newsletter</h3>
+            </div>
+            <p>Sign up to Private's weekly newsletter to get the latest updates.</p>
+            <div class="footer-form mb-20">
+              <form action="#" class="rr-subscribe-form">
+                <input class="form-control" type="email" name="email" placeholder="Email address">
+                <input type="hidden" name="action" value="mailchimpsubscribe">
+                <button class="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row copyright-content">
+          <div class="col-md-6">
+            <p>© 2024 InternetReseller. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="copy-list">
+              <li><a href="terms-and-condition.html">Terms & Conditions</a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+  <!--scrollup-->
+
+  <!-- JS here -->
+  <script src="assets/js/vendor/jquary-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/bootstrap-bundle.js"></script>
+  <script src="assets/js/vendor/imagesloaded-pkgd.js"></script>
+  <script src="assets/js/vendor/waypoints.min.js"></script>
+  <script src="assets/js/vendor/venobox.min.js"></script>
+  <script src="assets/js/vendor/odometer.min.js"></script>
+  <script src="assets/js/vendor/meanmenu.js"></script>
+  <script src="assets/js/vendor/smooth-scroll.js"></script>
+  <script src="assets/js/vendor/jquery.isotope.js"></script>
+  <script src="assets/js/vendor/wow.min.js"></script>
+  <script src="assets/js/vendor/swiper.min.js"></script>
+  <script src="assets/js/vendor/moment.min.js"></script>
+  <script src="assets/js/vendor/daterangepicker.min.js"></script>
+  <script src="assets/js/vendor/split-type.min.js"></script>
+  <script src="assets/js/vendor/gsap.min.js"></script>
+  <script src="assets/js/vendor/scroll-trigger.min.js"></script>
+  <script src="assets/js/vendor/nice-select.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
