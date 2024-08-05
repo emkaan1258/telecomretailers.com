@@ -1120,217 +1120,194 @@ bottom: -41px;
           left: 10px;
       }
 
-      @media only screen and (max-width: 428px) {
-        .heading {
-            font-size: 28px !important;
-        }
-    
-        .popupFooter {
-            font-size: 1.1rem !important;
-            height: 10vh !important;
-        }
-    
-        .phone_number {
-            font-weight: bold;
-            background-color: #d52b1e;
-            color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80vw;
-            padding: 18px !important;
-            font-size: 16px !important;
-            border-radius: 6px;
-        }
+   /* Styles for responsive sizing and positioning */
+@media only screen and (max-width: 428px) {
+    .heading {
+      font-size: 28px !important;
     }
-    
-    @media only screen and (max-width: 768px) {
-        .popup {
-            position: fixed;
-            top: 0;
-            /* border-top: 8vw solid #d52b1e; */
-            left: 0;
-            width: 100%;
-            height: 900px;
-            display: flex;
-            background-color: #fff !important;
-            /* justify-content: space-between; */
-            flex-direction: column;
-            align-items: center;
-            z-index: 999;
-            /* Ensure popup is above other content */
-            box-sizing: border-box;
-        }
-    
-        .overlay {
-            cursor: pointer;
-        }
-    
-        .popupFooter {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 25px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #d52b1e;
-            height: 12vh;
-            color: #f0f0f0 !important;
-            font-size: 20px !important;
-        }
-    
-        .popupHeader {
-            width: 100%;
-            /* visibility: hidden; */
-            /* min-width: 100%; */
-            height: 10vh;
-            /* max-width: 100%; */
-            background-color: #d52b1e;
-            height: 12vh;
-            color: #f0f0f0 !important;
-            border-radius: 0 0 2px 2px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 27px;
-            font-weight: 700;
-        }
-    
-        .popupContent {
-            display: flex !important;
-            flex-direction: column;
-            align-items: center !important;
-            justify-content: space-between !important;
-            margin-top: 22vh;
-        }
-    
-        .logo {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            width: 170px;
-            max-width: 100%;
-            height: 110px;
-            margin-bottom: 10px !important;
-        }
-    
-        .heading {
-            font-size: 35px;
-            /* Adjust heading size as needed */
-            margin-bottom: 20px !important;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #050505cb;
-            font-weight: 750;
-            padding-top: 20px !important;
-        }
-    
-        .phone_number {
-            font-weight: bold;
-            color: #f0f0f0 !important;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80vw !important;
-            padding: 20px !important;
-            font-size: 24px !important;
-            border-radius: 6px !important;
-            background: #d52b1e;
-        }
+    .popupFooter {
+      font-size: 1.1rem !important;
+      height: 10vh !important;
     }
-    
-    @media only screen and (min-width: 768px) {
-        .popup {
-            display: none !important;
-            position: fixed;
-            border-top: 1vw solid #d52b1e;
-            top: 5vh;
-            left: 5vw;
-            width: 22vw;
-            padding-top: 3vw;
-            height: fit-content;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
-            border-radius: 6px;
-            display: flex;
-            background-color: #fff;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 10px;
-            z-index: 999;
-        }
-    
-        .popupFooter {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: medium !important;
-            width: 100%;
-            background-color: #d52b1e;
-            height: 8vh;
-            color: #f0f0f0 !important;
-            font-size: 20px;
-        }
-    
-        .popupHeader {
-            /* visibility: hidden; */
-            align-items: center;
-            justify-content: flex-start;
-            font-weight: bold;
-            font-size: larger;
-            padding-left: 10%;
-            max-width: 100%;
-            /* background-color: #d52b1e; */
-            height: 1vh;
-            color: #f0f0f0 !important;
-            font-size: 24px;
-        }
-    
-        .popupContent {
-            display: flex !important;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-width: 100%;
-        }
-    
-        .logo {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            width: 130px !important;
-            height: 60px !important;
-            margin-bottom: 10px !important;
-        }
-    
-        .heading {
-            font-size: 22px;
-            /* Adjust heading size as needed */
-            margin-bottom: 20px !important;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 700;
-        }
-    
-        .phone_number {
-            font-weight: bold;
-            color: #f0f0f0 !important;
-            display: flex;
-            font-size: medium !important;
-            justify-content: center;
-            align-items: center;
-            /* width: 80vw; */
-            min-width: 80% !important;
-            padding: 10px !important;
-            font-size: 20px !important;
-        }
+    .phoneNumber {
+      font-weight: bold;
+      background-color: #003057;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      padding: 18px !important;
+      font-size: 16px !important;
+      border-radius: 6px;
     }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      background-color: #fff !important;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      z-index: 999; /* Ensure popup is above other content */
+    }
+    .overlay {
+      cursor: pointer;
+    }
+    .popupFooter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: larger;
+      width: 100%;
+      background-color: #003057;
+      height: 12vh;
+      color: #f0f0f0 !important;
+      font-size: 24px;
+    }
+    .popupHeader {
+      /* visibility: hidden; */
+  
+      min-width: 100%;
+      max-width: 100%;
+      background-color: #003057;
+      height: 1vh;
+      color: #f0f0f0 !important;
+      border-radius: 0 0 2px 2px;
+    }
+  
+    .popupContent {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center !important;
+      justify-content: space-between !important;
+    }
+  
+    .logo {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 170px;
+      max-width: 100%;
+      height: 60px;
+      margin-bottom: 10px !important;
+    }
+  
+    .heading {
+      font-size: 35px; /* Adjust heading size as needed */
+      margin-bottom: 20px !important;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #050505cb;
+      font-weight: 750;
+      padding-top: 20px !important;
+    }
+  
+    .phoneNumber {
+      font-weight: bold;
+      color: #f0f0f0 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80vw !important;
+      padding: 20px !important;
+      font-size: 24px !important;
+      border-radius: 6px !important;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .popup {
+      position: fixed;
+      top: 5vh;
+      left: 5vw;
+      width: 30vw;
+      height: 30vw;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+      border-radius: 6px;
+      display: flex;
+      background-color: #fff;
+      flex-direction: column;
+      justify-content: space-between !important;
+      gap: 10px;
+      z-index: 999;
+    }
+    .popupFooter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: medium !important;
+      width: 100%;
+      background-color: #003057;
+      height: 8vh;
+      color: #f0f0f0 !important;
+      font-size: 20px;
+    }
+    .popupHeader {
+      /* visibility: hidden; */
+      align-items: center;
+      justify-content: flex-start;
+      font-weight: bold;
+      font-size: larger;
+      padding-left: 10%;
+      max-width: 100%;
+      background-color: #003057;
+      height: 1vh;
+      color: #f0f0f0 !important;
+      font-size: 24px;
+    }
+  
+    .popupContent {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+    }
+  
+    .logo {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 130px !important;
+      height: 60px !important;
+      margin-bottom: 10px !important;
+    }
+  
+    .heading {
+      font-size: 22px; /* Adjust heading size as needed */
+      margin-bottom: 20px !important;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+    }
+  
+    .phoneNumber {
+      font-weight: bold;
+      color: #f0f0f0 !important;
+      display: flex;
+      font-size: medium !important;
+      justify-content: center;
+      align-items: center;
+      /* width: 80vw; */
+      min-width: 80% !important;
+      padding: 10px !important;
+      font-size: 20px !important;
+    }
+  }
+  
 
 
 .services-one {
@@ -1489,154 +1466,3 @@ bottom: -41px;
     color: var(--twonet-primery);
     font-weight: 700;
 }
-#callnowbutton {
-	display: none;
-}
-
-@media screen and (max-width: 650px) {
-	#callnowbutton {
-		display: block;
-		position: fixed;
-		text-decoration: none;
-		z-index: 2147483647;
-		width: 100%;
-		left: 0;
-		bottom: 0;
-		height: 60px;
-		border-top: 1px solid #d52b1e;
-		border-bottom: 1px solid #d52b1e;
-		text-shadow: 0 1px #d52b1e;
-		text-align: center;
-		color: #fff;
-		font-weight: 600;
-		font-size: 120%;
-		overflow: hidden;
-		background: #d52b1e;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-}
-
-.a-link:hover {
-	text-decoration: none;
-}
-
-a {
-	text-decoration: none;
-}
-
-.cheap {
-	display: block;
-	padding-top: 14px;
-	margin-top: 10px;
-	margin-bottom: 11px;
-	font-size: 22px;
-	color: rgb(255 255 255);
-	background: #d52b1e;
-	padding-bottom: 10px;
-	font-weight: 600;
-	width: 82%;
-	margin-left: 10%;
-}
-
-.off {
-	font-size: 25px;
-	color: rgb(0, 184, 153);
-	font-weight: 700;
-	display: block;
-	padding-top: 60px;
-	padding-bottom: 20px;
-}
-
-.call-btn {
-	font-size: 16px;
-	padding: 10px 20px;
-	border: 0px;
-	background: #6138f5;
-	color: #fff !important;
-	font-weight: 600;
-	border-radius: 3px;
-}
-
-.call-btn2 {
-	font-size: 30px;
-	padding: 10px 20px;
-	border: 0px;
-	background: #6138f5;
-	color: #fff !important;
-	font-weight: 600;
-	border-radius: 3px;
-	width: 100%;
-}
-
-.modal-content {
-	background-color: #fff !important;
-}
-
-.buttom-call {
-	margin-top: 150px;
-}
-
-.modal-body.text-center {
-	margin-top: 30%;
-}
-
-.modal {
-	max-height: 100%;
-	max-width: 100%;
- 
-}
-
-.modal-header {
-	background: #d52b1e;
-}
-
-.modal-title {
-	color: #fff;
-	font-weight: 600;
-	font-size: 25px;
-}
-
-.modal-header .close {
-	margin-top: -32px;
-}
-
-.close {
-	padding: 5px !important;
-	line-height: 1;
-	color: #fff;
-	/* border-radius: 10px; */
-	background: #262323 !important;
-	text-shadow: 0 1px 0 #fff;
-	filter: alpha(opacity=20);
-	opacity: 13;
-}
-
-.unpub {
-	background: #6138f5;
-	padding: 10px;
-	color: #fff;
-}
-
-.book {
-	background: #fff;
-	color: #4a4545;
-	padding: 17px;
-}
-
-.modal-body {
-	padding: 0px;
-}
-
-@media only screen and (max-width: 600px) {
-	.modal-content {
-		height: 900px;
-	}
-	.modal.show .modal-dialog {
-		margin-top: 3%;
-        margin: 0px;
-	}
-}
-
-
