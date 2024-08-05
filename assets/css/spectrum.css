@@ -143,6 +143,7 @@
 
 @media only screen and (min-width: 768px) {
     .popup {
+        display: none !important;
         position: fixed;
         border-top: 1vw solid #003057;
         top: 5vh;
