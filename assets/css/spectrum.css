@@ -773,3 +773,11 @@ text-align: center;
     padding-right: 15px;
     padding-left: 15px;
 }
+.logo-img{
+    background-color: white;
+    width: 217px;
+    height: 80px;
+    padding: 11px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+}
