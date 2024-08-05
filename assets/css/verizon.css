@@ -1489,4 +1489,154 @@ bottom: -41px;
     color: var(--twonet-primery);
     font-weight: 700;
 }
+#callnowbutton {
+	display: none;
+}
+
+@media screen and (max-width: 650px) {
+	#callnowbutton {
+		display: block;
+		position: fixed;
+		text-decoration: none;
+		z-index: 2147483647;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		height: 60px;
+		border-top: 1px solid #d52b1e;
+		border-bottom: 1px solid #d52b1e;
+		text-shadow: 0 1px #d52b1e;
+		text-align: center;
+		color: #fff;
+		font-weight: 600;
+		font-size: 120%;
+		overflow: hidden;
+		background: #d52b1e;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.a-link:hover {
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.cheap {
+	display: block;
+	padding-top: 14px;
+	margin-top: 10px;
+	margin-bottom: 11px;
+	font-size: 22px;
+	color: rgb(255 255 255);
+	background: #d52b1e;
+	padding-bottom: 10px;
+	font-weight: 600;
+	width: 82%;
+	margin-left: 10%;
+}
+
+.off {
+	font-size: 25px;
+	color: rgb(0, 184, 153);
+	font-weight: 700;
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+.call-btn {
+	font-size: 16px;
+	padding: 10px 20px;
+	border: 0px;
+	background: #6138f5;
+	color: #fff !important;
+	font-weight: 600;
+	border-radius: 3px;
+}
+
+.call-btn2 {
+	font-size: 30px;
+	padding: 10px 20px;
+	border: 0px;
+	background: #6138f5;
+	color: #fff !important;
+	font-weight: 600;
+	border-radius: 3px;
+	width: 100%;
+}
+
+.modal-content {
+	background-color: #fff !important;
+}
+
+.buttom-call {
+	margin-top: 150px;
+}
+
+.modal-body.text-center {
+	margin-top: 30%;
+}
+
+.modal {
+	max-height: 100%;
+	max-width: 100%;
+ 
+}
+
+.modal-header {
+	background: #d52b1e;
+}
+
+.modal-title {
+	color: #fff;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.modal-header .close {
+	margin-top: -32px;
+}
+
+.close {
+	padding: 5px !important;
+	line-height: 1;
+	color: #fff;
+	/* border-radius: 10px; */
+	background: #262323 !important;
+	text-shadow: 0 1px 0 #fff;
+	filter: alpha(opacity=20);
+	opacity: 13;
+}
+
+.unpub {
+	background: #6138f5;
+	padding: 10px;
+	color: #fff;
+}
+
+.book {
+	background: #fff;
+	color: #4a4545;
+	padding: 17px;
+}
+
+.modal-body {
+	padding: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+	.modal-content {
+		height: 900px;
+	}
+	.modal.show .modal-dialog {
+		margin-top: 3%;
+        margin: 0px;
+	}
+}
+
 
