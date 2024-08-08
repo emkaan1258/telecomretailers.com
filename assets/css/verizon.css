@@ -1194,13 +1194,13 @@ bottom: -41px;
     }
   
     .logo {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      width: 170px;
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 170px;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
     }
   
     .heading {
@@ -1213,6 +1213,7 @@ bottom: -41px;
       color: #050505cb;
       font-weight: 750;
       padding-top: 20px !important;
+      width: 300px;
     }
   
     .phoneNumber {
