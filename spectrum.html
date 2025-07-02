@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/popop.css">
 </head>
 <script>
     function toggleFaq(id) {
@@ -31,44 +32,73 @@
 </script>
 
 <body>
+     <section class=" ">
+  <div class="overlay " id="popupOverlay">
+    <div class="popup">
+      <div class="popupHeader" style="background-color: #003057; position: relative;">
+        <a href="tel:+188830305819" class="text-white p-0">+1(844)-224-8338</a>
+        <!-- Close Button -->
+        <span class="closePopup" onclick="closePopup()" style="
+          position: absolute;
+          right: 10px;
+          top: 5px;
+          font-size: 24px;
+          color: white;
+          cursor: pointer;
+        ">&times;</span>
+      </div>
+      <div class="popupContent">
+        <img loading="lazy" src="assets/img/spectrum/spectrum-logo.png" alt="Logo" class="logo" />
+        <h2 class="popupheading">
+          Call to Pay Your Bill <br />
+          Now
+        </h2>
+        <a href="tel:+188830305819" class="text-white text-center py-3 px-5 rounded-3" style="background-color:#003057 ;  ">+1(844)-224-8338</a>
+      </div>
+      <a href="tel:+188830305819" class="popupFooter py-3" style="background-color: #003057">
+        Call Now +1(844)-224-8338
+      </a>
+    </div>
+  </div>
+</section>
     <div style="overflow: hidden;">
         <header class="header sticky-active">
-            <div class="middle-header">
-                <div class="container">
-                    <div class="middle-header-inner">
-                        <div class="footer-logo">
-                            InternetReseller
-                        </div>
-                        <div class="header-items-wrap">
-                            <div class="header-item">
-                                <div class="icon"><i class="fa-sharp fa-solid fa-phone"></i></div>
-                                <div class="content">
-                                    <span>Call Us 24/7</span>
-                                    <a href="tel:+18889154781"> +1(888) 915-4781</a>
-                                </div>
+        <div class="middle-header">
+            <div class="container-lg container-fluid">
+                <div class="middle-header-inner justify-content-between">
+                    <div class="footer-logo">
+                        InternetReseller
+                     </div>
+                    <div class="header-items-wrap">
+                        <div class="header-item">
+                            <div class="icon"><i class="fa-sharp fa-solid fa-phone"></i></div>
+                            <div class="content">
+                                <span>Call Us 24/7</span>
+                                <a href="tel:+18338600075">+1(844)-224-8338</a>
                             </div>
-                            <div class="header-item">
-                                <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i></div>
-                                <div class="content">
-                                    <span>Mail For Support</span>
-                                    <a href="info@internetreseller.us">info@internetreseller.us</a>
-                                </div>
+                        </div>
+                        <div class="header-item">
+                            <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i></div>
+                            <div class="content">
+                                <span>Mail For Support</span>
+                                <a href="info@internetreseller.us">info@internetreseller.us</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="primary-header">
-                <div class="container">
-                    <div class="primary-header-inner">
-                        <div class="header-logo d-lg-none">
-                            <a href="/" style="font-size:20px;font-weight: 900;color: black;">
-                                InternetReseller
-                            </a>
-                        </div>
-                        <div class="header-menu-wrap">
-                            <div class="mobile-menu-items">
-                        <ul>
+        </div>
+        <div class="primary-header">
+            <div class="container p-0">
+                <div class="primary-header-inner">
+                    <div class="header-logo d-lg-none">
+                        <a href="/" style="font-size:20px;font-weight: 900;color: black;">
+                            InternetReseller
+                        </a>
+                    </div>
+                    <div class="header-menu-wrap">
+                        <div class="mobile-menu-items">
+                            <ul>
                                 <li class="menu-item-has-children active">
                                     <a href="/index.html">Home</a>
                                 </li>
@@ -99,33 +129,33 @@
                                     <a href="/contact.html">Contact Us</a>
                                 </li>
                             </ul>
-                            </div>
                         </div>
-                        <!-- /.header-menu-wrap -->
-                        <div class="header-right-wrap">
-                            <div class="header-right">
-                                <!-- <a href="/contact" class="header-btn">Book Appointment</a>
+                    </div>
+                    <!-- /.header-menu-wrap -->
+                    <div class="header-right-wrap">
+                        <div class="header-right">
+                            <!-- <a href="/contact" class="header-btn">Book Appointment</a>
                                 <div class="search-icon dl-search-icon">
                                     <i class="fa-regular fa-magnifying-glass"></i>
                                 </div> -->
-                                <div class="sidebar-icon">
-                                    <button class="sidebar-trigger open">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </div>
+                            <div class="sidebar-icon">
+                                <button class="sidebar-trigger open">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
                             </div>
-                            <!-- /.header-right -->
                         </div>
+                        <!-- /.header-right -->
                     </div>
-                    <!-- /.primary-header-inner -->
                 </div>
+                <!-- /.primary-header-inner -->
             </div>
-        </header>
+        </div>
+    </header>
         <!--+18889154781-->
         <section class="spectrum-banner">
-            <a href="tel:+18886983301">
+            <!-- <a href="tel:+18886983301">
                 <div class="overlay">
                     <div class="popup">
                         <div class="popupHeader" style="background: #003057;">Call Now   +1(888) 698-3301 </div>
@@ -138,7 +168,7 @@
                         </div>
                         <div class="popupFooter" style="background: #003057;">Call Now  +1(888) 698-3301</div>
                     </div>
-            </a>
+            </a> -->
 
             <div class="container banner-container">
                 <div class="row">
@@ -171,7 +201,7 @@
                         </div>
                         <div class="button-txt d-flex align-items-center gap-3">
                             <a class="banner-button" href="+18889154781">SHOP INTERNET</a>
-                            <span> +1(888) 915-4781</span>
+                            <span> +1(844)-224-8338</span>
                         </div>
                     </div>
                 </div>
@@ -745,7 +775,7 @@
                             </div>
                         </div>
                         <p>312 W 2ND, <br>CASPER WY 82601, USA </p>
-                        <p> +1(888) 915-4781</p>
+                        <p> +1(844)-224-8338</p>
                         <div class="d-flex text-white gap-4 mt-4">
 									<a href="#" class="text-white"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
 									<a href="#" class="text-white"><i class="fa-brands fa-twitter fa-2xl"></i></a>
