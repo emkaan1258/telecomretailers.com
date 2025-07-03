@@ -77,6 +77,199 @@
   <link rel="stylesheet" href="assets/css/swiper.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
+<style>
+ 
+   /* Styles for responsive sizing and positioning */
+   @media only screen and (max-width: 428px) {
+    .heading {
+      font-size: 28px !important;
+    }
+    .popupFooter {
+      font-size: 1.1rem !important;
+      height: 10vh !important;
+    }
+    .phoneNumber {
+      font-weight: bold;
+      background-color: #003057;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      padding: 18px !important;
+      font-size: 16px !important;
+      border-radius: 6px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      background-color: #fff !important;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      z-index: 999; /* Ensure popup is above other content */
+    }
+    .overlay {
+      cursor: pointer;
+    }
+    .popupFooter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: larger;
+      width: 100%;
+      background-color: #003057;
+      height: 12vh;
+      color: #f0f0f0 !important;
+      font-size: 24px;
+    }
+    .popupHeader {
+           min-width: 100%;
+           max-width: 100%;
+           background-color: #003057;
+           height: 8vh;
+           color: #f0f0f0 !important;
+           border-radius: 0 0 2px 2px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 20px;
+           font-weight: 700;
+    }
+  
+    .popupContent {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center !important;
+      justify-content: space-between !important;
+    }
+  
+    .logo {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 170px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px !important;
+    }
+  
+    .heading {
+      font-size: 35px; /* Adjust heading size as needed */
+      margin-bottom: 20px !important;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #050505cb;
+      font-weight: 750;
+      padding-top: 20px !important;
+    }
+  
+    .phoneNumber {
+      font-weight: bold;
+      color: #f0f0f0 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80vw !important;
+      padding: 20px !important;
+      font-size: 24px !important;
+      border-radius: 6px !important;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .popup {
+      position: fixed;
+      top: 5vh;
+      left: 5vw;
+      width: 400px;
+      height: auto;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+      border-radius: 6px;
+      display: flex;
+      background-color: #fff;
+      flex-direction: column;
+      justify-content: space-between !important;
+      gap: 10px;
+      z-index: 999;
+    }
+    .popupFooter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: medium !important;
+      width: 100%;
+      background-color: #003057;
+      height: 8vh;
+      color: #f0f0f0 !important;
+      font-size: 20px;
+    }
+    .popupHeader {
+      /* visibility: hidden; */
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: larger;
+      padding-left: 0px;
+      max-width: 100%;
+      background-color: #003057;
+      height: 7vh;
+      color: #f0f0f0 !important;
+      font-size: 18px;
+    }
+  
+    .popupContent {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+    }
+  
+    .logo {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 130px ;
+      height: auto !important;
+      margin-bottom: 10px !important;
+    }
+  
+    .heading {
+      font-size: 22px; /* Adjust heading size as needed */
+      margin-bottom: 20px !important;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+    }
+    
+    .phoneNumber {
+      font-weight: bold;
+      color: #f0f0f0 !important;
+      display: flex;
+      font-size: medium !important;
+      justify-content: center;
+      align-items: center;
+      /* width: 80vw; */
+      min-width: 80% !important;
+      padding: 10px !important;
+      font-size: 20px !important;
+    }
+  }
+</style>
 
 <body>
       <section class=" ">
@@ -202,18 +395,18 @@
     </header>
         <!--+18889154781-->
         <section class="spectrum-banner">
-            <!-- <a href="tel:+18886983301">
+            <!-- <a href="tel:+18663589711">
                 <div class="overlay">
                     <div class="popup">
-                        <div class="popupHeader" style="background: #003057;">Call Now   +1(888) 698-3301 </div>
+                        <div class="popupHeader" style="background: red;">Call Now   +1(866) 358-9711 </div>
                         <div class="popupContent">
                             <img loading="lazy" src="assets/img/spectrum/spectrum-logo.png" alt="Logo" class="logo"
                                 style="width: 300px;" />
                             <h2 class="heading"> Call to Pay Your Bill <br>
                                 Now</h2>
-                            <p class="phoneNumber" style="background: #003057;"> +1(888) 698-3301</p>
+                            <p class="phoneNumber" style="background: red;"> +1(866) 358-9711</p>
                         </div>
-                        <div class="popupFooter" style="background: #003057;">Call Now  +1(888) 698-3301</div>
+                        <div class="popupFooter" style="background: red;">Call Now  +1(866) 358-9711</div>
                     </div>
             </a> -->
 
@@ -259,23 +452,24 @@
                 </div>
             </div>
     </div>
+    
+              <a href="tel:+18663589711">
+                <div class="overlay">
+                    <div class="popup">
+                        <div class="popupHeader text-center text-white fw-bold py-3" style="background: red;">Call Now   +1(866) 358-9711 </div>
 
-    <!-- <a href="tel:+18663589711">
-      <div class="overlay">
-          <div class="popup">
-              <div class="popupHeader" >Call Now  +1(866) 358-9711 </div>
-              <div class="popupContent">
-                  <img loading="lazy" src="assets/img/verizon/verizon-plan.png" width="100%" height="100%" alt="Logo" class="logo"
-                      style="width: 350px !important">
-                  <h2 class="heading">
-                      Call to Pay Your Bill <br>
-                      Now
-                  </h2>
-                  <p class="phone_number" > +1(866) 358-9711 </p>
-              </div>
-              <div class="popupFooter" >Call Now  +1(866) 358-9711 </div>
-          </div>
-      </a> -->
+                        <div class="popupContent pt-4">
+                            <img loading="lazy" src="assets/img/verizon/verizon-plan.png" alt="Logo" class="logo"
+                                style="width: 300px;" />
+                            <h2 class="heading"> Call to Pay Your Bill <br>
+                                Now</h2>
+                            <p class="phoneNumber" style="background: red;"> +1(866) 358-9711</p>
+                        </div>
+                        <div class="popupFooter" style="background: red;">Call Now  +1(866) 358-9711</div>
+                    </div>
+            </a>
+
+   
     <div class="container">
       <div class="header-promo">
         <div class="header-promo-inner">
