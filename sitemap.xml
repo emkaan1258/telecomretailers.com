@@ -1,59 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://internetreseller.us/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/about/</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/contact/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/disclaimer/</loc>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/faq/</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/homephone/</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/internet/</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/pricing/</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/privacypolicy/</loc>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/refundpolicy/</loc>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/service/</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/spectrum/</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/terms-and-condition/</loc>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://internetreseller.us/verizon/</loc>
-    <priority>0.7</priority>
-  </url>
+<url>
+<loc>https://internetreseller.us/robots.txt</loc>
+<priority>0.1</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/</loc>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/about/</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/contact/</loc>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/disclaimer/</loc>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/faq/</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/homephone/</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/internet/</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/pricing/</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/privacypolicy/</loc>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/refundpolicy/</loc>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/service/</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/spectrum/</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/terms-and-condition/</loc>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://internetreseller.us/verizon/</loc>
+<priority>0.7</priority>
+</url>
 </urlset>
