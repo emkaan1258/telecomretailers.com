@@ -934,3 +934,47 @@
  function closePopup() {
     document.getElementById('popupOverlay').style.display = 'none';
   }
+
+
+  
+
+document.getElementById("whatsappButton").addEventListener("click", function() {
+    window.location.href = "https://wa.me/18555982158"; // WhatsApp number link
+  });
+
+  function toggleFAQ(event) {
+    const allContents = document.querySelectorAll('.faq-content');
+    allContents.forEach(content => {
+        content.style.display = 'none'; // سبھی جواب بند کریں
+    });
+
+    const clickedFAQ = event.currentTarget.querySelector('.faq-content');
+    if (clickedFAQ.style.display === 'block') {
+        clickedFAQ.style.display = 'none'; // اگر کھلا ہے تو بند کریں
+    } else {
+        clickedFAQ.style.display = 'block'; // کھولیں
+    }
+}
+function toggleAnswer(answerId) {
+    // Get all FAQ answers
+    const allAnswers = document.querySelectorAll('.faq-answer');
+
+    // Close all answers
+    allAnswers.forEach(answer => {
+        if (answer.id !== answerId) {
+            answer.style.display = 'none';
+        }
+    });
+
+    // Toggle the clicked answer
+    const currentAnswer = document.getElementById(answerId);
+    if (currentAnswer.style.display === 'block') {
+        currentAnswer.style.display = 'none';
+    } else {
+        currentAnswer.style.display = 'block';
+    }
+}
+
+ function closePopup() {
+    document.getElementById('popupOverlay').style.display = 'none';
+  }
