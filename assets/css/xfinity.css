@@ -1,0 +1,421 @@
+.link{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.link:hover{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.link1{
+    color: black;;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.link1:hover{
+    color: black;;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.main{
+    background-image: url(../img/xfinity/internet-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.heading{
+    font-size: 40px;
+}
+.button{
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid rgb(127, 65, 243);
+    color: rgb(127, 65, 243);
+
+}
+.button:hover{
+    background-color: rgb(127, 65, 243) ;
+    border-radius: 50px;
+    border: 2px solid rgb(127, 65, 243);
+    color: white;
+
+}
+.button2{
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid  rgb(67, 143, 67);
+    color:  rgb(67, 143, 67);
+
+}
+.button2:hover{
+    background-color:  rgb(67, 143, 67) ;
+    border-radius: 50px;
+    border: 2px solid  rgb(67, 143, 67);
+    color: white;
+
+}
+.p1{
+    color: white;
+    font-size: 13px;
+    
+}
+.logo1{
+    width: 50%;
+}
+.logo1 img{
+    width: 30%;
+}
+
+.can{
+    background-color:  rgb(67, 143, 67);
+    
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 70%;
+    margin: auto;
+}
+.button3{
+    border: 2px solid gray;
+    border-radius: 5px;
+    color: black;
+}
+.button3:hover{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+.row-1{
+    width: 100%;
+    display: flex;
+    
+}
+.card-1{
+    width: 47%;
+}
+.row-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.line-1{
+    width: 20%;
+}
+.line-2{
+    width: 65%;
+}
+
+.banner .overlay {
+    cursor: pointer;
+  }
+  .banner{
+    display: none;
+  }
+  .popup {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    background-color: #fff;
+  }
+  
+  .popupHeader {
+    background-color: #bf1111;
+    color: #f0f0f0;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    /* font-weight: bold; */
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .popupContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 325px;
+    
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .popupheading {
+    text-align: center;
+    font-weight: 750;
+    color: #050505cb;
+    margin: 24px 0px;
+  }
+  
+  .phoneNumber {
+    /* font-weight: bold; */
+    background-color: #bf1111;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    border-radius: 6px;
+    font-size: 25px;
+  }
+  
+  .popupFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-weight: bold; */
+    background-color: #bf1111;
+    color: #f0f0f0;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 428px) {
+    .banner{
+      display: block;
+    }
+    .popupheading {
+      font-size: 34px !important;
+    }
+    .popupFooter {
+      font-size: 1.1rem;
+      height: 10vh;
+    }
+    .phoneNumber {
+      width: 80vw;
+      padding: 18px;
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .banner{
+      display: block;
+    }
+    .popup {
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+    }
+    .popupHeader p {
+      font-size: 20px;
+    }
+    .popupFooter {
+      font-size: 25px;
+      height: 12vh;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .popup {
+      top: 5vh;
+      left: 5vw;
+      width: 22vw;
+      padding-top: 3vw;
+      height: fit-content;
+      border-radius: 6px;
+    }
+    .popupFooter {
+      font-size: 20px;
+      height: 8vh;
+    }
+    .popupheading {
+      font-size: 22px;
+    }
+    .phoneNumber {
+      min-width: 80%;
+    }
+  }
+  
+@media screen and (max-width:786px){
+    .link{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .link:hover{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .link1{
+        color: black;;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .link1:hover{
+        color: black;;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .main{
+        background-image: url(../img/xfinity/internet-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .heading{
+        font-size: 50px;
+    }
+    .button{
+        background-color: white;
+        border-radius: 50px;
+        border: 2px solid rgb(127, 65, 243);
+        color: rgb(127, 65, 243);
+    
+    }
+    .button:hover{
+        background-color: rgb(127, 65, 243) ;
+        border-radius: 50px;
+        border: 2px solid rgb(127, 65, 243);
+        color: white;
+    
+    }
+    .button2{
+        background-color: white;
+        border-radius: 50px;
+        border: 2px solid  rgb(67, 143, 67);
+        color:  rgb(67, 143, 67);
+    
+    }
+    .button2:hover{
+        background-color:  rgb(67, 143, 67) ;
+        border-radius: 50px;
+        border: 2px solid  rgb(67, 143, 67);
+        color: white;
+    
+    }
+    .can{
+        background-color:  rgb(67, 143, 67);
+        
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        width: 100%;
+        margin: auto;
+    }
+    .p1{
+        color: white;
+        font-size: 13px;
+        
+    }
+    .logo1{
+        width: 50%;
+    }
+    .logo1 img{
+        width: 50%;
+    }
+    .row-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.line-1{
+    width: 50%;
+}
+.line-2{
+    width: 100%;
+}
+.row-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-1{
+    width: 100%;
+}
+}
+
+@media screen and (max-width:500px){
+    .link{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .link:hover{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .link1{
+        color: black;;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .link1:hover{
+        color: black;;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .main{
+        background-image: url(../img/xfinity/internet-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .heading{
+        font-size: 50px;
+    }
+    .button{
+        background-color: white;
+        border-radius: 50px;
+        border: 2px solid rgb(127, 65, 243);
+        color: rgb(127, 65, 243);
+    
+    }
+    .button:hover{
+        background-color: rgb(127, 65, 243) ;
+        border-radius: 50px;
+        border: 2px solid rgb(127, 65, 243);
+        color: white;
+    
+    }
+    .button2{
+        background-color: white;
+        border-radius: 50px;
+        border: 2px solid  rgb(67, 143, 67);
+        color:  rgb(67, 143, 67);
+    
+    }
+    .button2:hover{
+        background-color:  rgb(67, 143, 67) ;
+        border-radius: 50px;
+        border: 2px solid  rgb(67, 143, 67);
+        color: white;
+    
+    }
+    .p1{
+        color: white;
+        font-size: 13px;
+        
+    }
+    .logo1{
+        width: 50%;
+    }
+    .logo1 img{
+        width: 80%;
+    }
+}
