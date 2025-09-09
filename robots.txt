@@ -100,4 +100,4 @@ User-agent: *
 Disallow: /
 
 # Sitemap location
-Sitemap: https://telecomratailers.com/sitemap.xml
+Sitemap: https://telecomretailers.com/sitemap.xml
