@@ -20,7 +20,7 @@
     justify-content: space-between;
 }
 .atnt-2{
-    width: 67%;
+    width: 100%;
     background-image: url(../img//at&t-2.webp);
     border-radius: 10px;
     background-size: cover;
@@ -67,11 +67,27 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
 }
 .mc-2{
     border: 1px solid gray;
     border-radius: 15px;
     width: 23%;
+    flex: 0 0 23%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 520px;
+}
+.mc-2 > .px-3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.mc-2 .btn{
+    margin-top: auto !important;
+    align-self: flex-start;
 }
 .faq {
     border-top: 1px solid #ccc;
@@ -152,11 +168,17 @@
         display: flex;
         flex-wrap: wrap ;
         justify-content: space-between;
+        align-items: stretch;
+        gap: 16px;
     }
     .mc-2{
         border: 1px solid gray;
         border-radius: 15px;
         width: 48%;
+        flex: 0 0 48%;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
     }
 }
 @media screen and (max-width: 768px) {
